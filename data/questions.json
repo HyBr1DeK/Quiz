@@ -1,0 +1,116 @@
+{
+  "Science": [
+    {
+      "question": "What is the chemical symbol for gold?",
+      "options": ["Au", "Go", "Gd", "Ag"],
+      "correct": "Au",
+      "explanation": "Au is the chemical symbol for gold on the periodic table."
+    },
+    {
+      "question": "What is the speed of light?",
+      "options": ["300,000 km/s", "150,000 km/s", "450,000 km/s", "200,000 km/s"],
+      "correct": "300,000 km/s",
+      "explanation": "Light travels at approximately 300,000 kilometers per second in a vacuum."
+    },
+    {
+      "question": "Which planet is closest to the sun?",
+      "options": ["Venus", "Mercury", "Earth", "Mars"],
+      "correct": "Mercury",
+      "explanation": "Mercury is the closest planet to the sun in our solar system."
+    },
+    {
+      "question": "What is the smallest unit of life?",
+      "options": ["Atom", "Molecule", "Cell", "Organ"],
+      "correct": "Cell",
+      "explanation": "The cell is the smallest unit of life and the basic building block of all organisms."
+    },
+    {
+      "question": "How many bones are in the adult human body?",
+      "options": ["186", "206", "226", "246"],
+      "correct": "206",
+      "explanation": "An adult human body has 206 bones."
+    },
+    {
+      "question": "What is the process by which plants make their own food?",
+      "options": ["Respiration", "Photosynthesis", "Fermentation", "Digestion"],
+      "correct": "Photosynthesis",
+      "explanation": "Photosynthesis is the process by which plants convert sunlight into chemical energy."
+    }
+  ],
+  "History": [
+    {
+      "question": "In what year did World War II end?",
+      "options": ["1943", "1944", "1945", "1946"],
+      "correct": "1945",
+      "explanation": "World War II ended in 1945 with Germany's surrender in May and Japan's surrender in August."
+    },
+    {
+      "question": "Who was the first president of the United States?",
+      "options": ["Thomas Jefferson", "George Washington", "John Adams", "James Madison"],
+      "correct": "George Washington",
+      "explanation": "George Washington served as the first president from 1789 to 1797."
+    },
+    {
+      "question": "In what year did the Titanic sink?",
+      "options": ["1910", "1912", "1914", "1920"],
+      "correct": "1912",
+      "explanation": "The RMS Titanic sank on April 15, 1912, after hitting an iceberg."
+    },
+    {
+      "question": "Which ancient wonder is still standing today?",
+      "options": ["Colossus of Rhodes", "Hanging Gardens of Babylon", "Great Pyramid of Giza", "Lighthouse of Alexandria"],
+      "correct": "Great Pyramid of Giza",
+      "explanation": "The Great Pyramid of Giza is the only surviving ancient wonder of the world."
+    },
+    {
+      "question": "Who invented the printing press?",
+      "options": ["Galileo Galilei", "Johannes Gutenberg", "Leonardo da Vinci", "Michelangelo"],
+      "correct": "Johannes Gutenberg",
+      "explanation": "Johannes Gutenberg invented the movable type printing press around 1440."
+    },
+    {
+      "question": "In what year did the Berlin Wall fall?",
+      "options": ["1987", "1988", "1989", "1990"],
+      "correct": "1989",
+      "explanation": "The Berlin Wall fell on November 9, 1989, symbolizing the end of the Cold War."
+    }
+  ],
+  "Geography": [
+    {
+      "question": "What is the capital of France?",
+      "options": ["Lyon", "Marseille", "Paris", "Nice"],
+      "correct": "Paris",
+      "explanation": "Paris is the capital and largest city of France."
+    },
+    {
+      "question": "What is the largest desert in the world?",
+      "options": ["Sahara", "Gobi", "Kalahari", "Antarctic"],
+      "correct": "Antarctic",
+      "explanation": "The Antarctic is technically the largest desert, though the Sahara is the largest hot desert."
+    },
+    {
+      "question": "Which river is the longest in the world?",
+      "options": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+      "correct": "Nile",
+      "explanation": "The Nile River in Africa is the longest river in the world at about 6,650 km."
+    },
+    {
+      "question": "What is the capital of Japan?",
+      "options": ["Osaka", "Yokohama", "Tokyo", "Kyoto"],
+      "correct": "Tokyo",
+      "explanation": "Tokyo is the capital and largest city of Japan."
+    },
+    {
+      "question": "Which is the deepest ocean trench?",
+      "options": ["Mariana Trench", "Tonga Trench", "Kuril-Kamchatka Trench", "Kermadec Trench"],
+      "correct": "Mariana Trench",
+      "explanation": "The Mariana Trench is the deepest known oceanic trench at about 11,000 meters."
+    },
+    {
+      "question": "What is the smallest country in the world by area?",
+      "options": ["Monaco", "San Marino", "Vatican City", "Liechtenstein"],
+      "correct": "Vatican City",
+      "explanation": "Vatican City is the smallest independent state in the world at about 0.44 square kilometers."
+    }
+  ]
+}
