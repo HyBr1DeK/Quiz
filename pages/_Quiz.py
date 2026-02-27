@@ -24,7 +24,7 @@ if not st.session_state.game_active or st.session_state.selected_category is Non
     st.stop()
 
 # Initialize timer state
-if 'timer_start' not in st.session_state:
+if 'timer_start' not in st.session_state or st.session_state.timer_start is None:
     st.session_state.timer_start = time.time()
 if 'question_index' not in st.session_state:
     st.session_state.question_index = 0
