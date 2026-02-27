@@ -51,7 +51,8 @@ with col1:
                 st.session_state.current_question = 0
                 st.session_state.answers = []
                 st.session_state.score = 0
-                st.rerun()
+                st.session_state.timer_start = None
+                st.switch_page("pages/_Quiz.py")
         with col_cat2:
             st.caption(f"{len(questions[category])} Q's")
 
