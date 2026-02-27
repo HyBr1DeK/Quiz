@@ -23,6 +23,12 @@ if not st.session_state.game_active or st.session_state.selected_category is Non
     st.warning("Please select a category from the home page to start playing!")
     st.stop()
 
+# Initialize timer state
+if 'timer_start' not in st.session_state:
+    st.session_state.timer_start = time.time()
+if 'question_index' not in st.session_state:
+    st.session_state.question_index = 0
+
 # Game interface
 st.title(f"🎮 {st.session_state.selected_category} Quiz")
 st.write(f"Player: **{st.session_state.player_name}**")
@@ -39,10 +45,20 @@ st.caption(f"Question {current_q_index + 1} of {len(category_questions)}")
 if current_q_index < len(category_questions):
     question_data = category_questions[current_q_index]
     
-    # Timer (Optional Bonus)
+    # Calculate remaining time
+    elapsed = time.time() - st.session_state.timer_start
+    remaining_time = max(0, int(30 - elapsed))
+    
+    # Timer and Score Display
     col_timer, col_score = st.columns([1, 1])
     with col_timer:
-        st.metric("⏱️ Time", "30 sec (bonus feature)")
+        # Color code the timer
+        if remaining_time > 10:
+            st.metric("⏱️ Time Remaining", f"{remaining_time}s", delta="", delta_color="off")
+        elif remaining_time > 0:
+            st.warning(f"⏱️ **{remaining_time} seconds left!**")
+        else:
+            st.error("⏱️ **Time's Up!**")
     with col_score:
         st.metric("📊 Current Score", f"{st.session_state.score} pts")
     
@@ -50,6 +66,28 @@ if current_q_index < len(category_questions):
     
     # Display question
     st.subheader(f"Q: {question_data['question']}")
+    
+    # Check if time is up
+    if remaining_time <= 0:
+        st.error("⏰ Time's up! Moving to next question...")
+        
+        # Mark as unanswered
+        st.session_state.answers.append({
+            'question': question_data['question'],
+            'user_answer': 'No answer (Time expired)',
+            'correct_answer': question_data['correct'],
+            'is_correct': False
+        })
+        
+        # Move to next question without points
+        time.sleep(2)
+        st.session_state.current_question += 1
+        st.session_state.timer_start = time.time()
+        
+        if st.session_state.current_question >= len(category_questions):
+            st.session_state.game_active = False
+        
+        st.rerun()
     
     # Display options as buttons
     selected_answer = None
@@ -85,6 +123,7 @@ if current_q_index < len(category_questions):
                 # Move to next question
                 time.sleep(2)
                 st.session_state.current_question += 1
+                st.session_state.timer_start = time.time()
                 
                 if st.session_state.current_question >= len(category_questions):
                     st.session_state.game_active = False

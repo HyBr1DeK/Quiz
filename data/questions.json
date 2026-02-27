@@ -1,40 +1,124 @@
 {
   "Games": [
     {
-      "question": "Which game is known as 'The King of Games'?",
-      "options": ["Chess", "Poker", "Go", "Bridge"],
-      "correct": "Chess",
-      "explanation": "Chess is often referred to as 'The King of Games' due to its complexity and strategic depth."
+      "question": "In what year does Cyberpunk 2077 take place?",
+      "options": ["2045", "2077", "2089", "2100"],
+      "correct": "2077",
+      "explanation": "Cyberpunk 2077 is set in the year 2077 in Night City, a metropolis on the west coast."
     },
     {
-      "question": "In Monopoly, what do you collect to own a property?",
-      "options": ["Tokens", "Deeds", "Cards", "Coins"],
-      "correct": "Deeds",
-      "explanation": "In Monopoly, you collect property deeds to own properties on the board."
+      "question": "What is the name of the protagonist in Cyberpunk 2077?",
+      "options": ["V", "Johnny", "Jackie", "Delamain"],
+      "correct": "V",
+      "explanation": "V is the customizable protagonist you play as in Cyberpunk 2077."
     },
     {
-      "question": "Which video game character is famous for collecting coins?",
-      "options": ["Sonic", "Mario", "Link", "Pac-Man"],
-      "correct": "Mario",
-      "explanation": "Mario is famous for collecting coins in the Super Mario video game series."
+      "question": "Which corporation is the primary antagonist in Cyberpunk 2077's main story?",
+      "options": ["Militech", "Arasaka", "Trauma Team", "Tyger Claws"],
+      "correct": "Arasaka",
+      "explanation": "Arasaka is a major megacorporation and plays a key role in the main plot of Cyberpunk 2077."
     },
     {
-      "question": "In Scrabble, how many point is the letter 'Q' worth?",
-      "options": ["5", "8", "10", "15"],
-      "correct": "10",
-      "explanation": "In Scrabble, the letter Q is worth 10 points."
+      "question": "What is the name of the AI that talks to you in Cyberpunk 2077?",
+      "options": ["EDI", "Wheatley", "Johnny Silverhand", "GLaDOS"],
+      "correct": "Johnny Silverhand",
+      "explanation": "Johnny Silverhand, a legendary rockerboy, appears as an AI construct in your neural implant."
     },
     {
-      "question": "What is the objective of Tic-Tac-Toe?",
-      "options": ["Get four in a row", "Get three in a row", "Get five in a row", "Fill all squares"],
-      "correct": "Get three in a row",
-      "explanation": "The objective of Tic-Tac-Toe is to get three of your marks in a row."
+      "question": "What is the main currency in Cyberpunk 2077?",
+      "options": ["Credits", "Eddies", "Nuyen", "Bits"],
+      "correct": "Eddies",
+      "explanation": "Eddies are the primary currency used throughout Cyberpunk 2077."
     },
     {
-      "question": "How many pieces does each player start with in Chess?",
-      "options": ["12", "16", "20", "24"],
-      "correct": "16",
-      "explanation": "Each player starts with 16 pieces in Chess: 1 king, 1 queen, 2 rooks, 2 bishops, 2 knights, and 8 pawns."
+      "question": "What is the day/night cycle mechanic called in Dying Light?",
+      "options": ["Daybreak", "Sunlight Cycle", "Night Terror", "Day/Night Dynamic"],
+      "correct": "Day/Night Dynamic",
+      "explanation": "During day, zombies are slow but vulnerable; at night, they become much more dangerous and active."
+    },
+    {
+      "question": "What is the name of the protagonist in the original Dying Light?",
+      "options": ["Kyle Crane", "Aiden Caldwell", "Harran", "Rais"],
+      "correct": "Kyle Crane",
+      "explanation": "Kyle Crane is the main character in the original Dying Light, sent to a quarantine zone."
+    },
+    {
+      "question": "What is the name of the quarantine zone in the original Dying Light?",
+      "options": ["Harran", "Villedor", "Paradise Grove", "Old Towne"],
+      "correct": "Harran",
+      "explanation": "Harran is the Turkish city that serves as the setting for the original Dying Light."
+    },
+    {
+      "question": "What type of virus creates the zombies in Dying Light?",
+      "options": ["T-Virus", "Harran Virus", "Blacklight Virus", "Green Flu"],
+      "correct": "Harran Virus",
+      "explanation": "The Harran Virus is the virus that transforms people into zombies in Dying Light."
+    },
+    {
+      "question": "What is the name of the protagonist in Dying Light 2?",
+      "options": ["Kyle Crane", "Aiden Caldwell", "Jade", "Frank"],
+      "correct": "Aiden Caldwell",
+      "explanation": "Aiden Caldwell is the main character in Dying Light 2: Stay Human."
+    },
+    {
+      "question": "What is the name of the famous airport mission in Call of Duty Modern Warfare?",
+      "options": ["All Ghillied Up", "Loose Ends", "Makarov's Revenge", "Turbulence"],
+      "correct": "Loose Ends",
+      "explanation": "Loose Ends is the mission featuring the controversial airport scene in Modern Warfare."
+    },
+    {
+      "question": "Who is Captain 'Roach' loyal to in Call of Duty Modern Warfare?",
+      "options": ["Captain MacTavish", "General Shepherd", "Price", "Gaz"],
+      "correct": "Captain MacTavish",
+      "explanation": "Roach follows the orders of Captain MacTavish throughout Modern Warfare."
+    },
+    {
+      "question": "What is Makarov's full name in Call of Duty Modern Warfare?",
+      "options": ["Vladimir Makarov", "Sergei Makarov", "Arkady Makarov", "Nikolai Makarov"],
+      "correct": "Vladimir Makarov",
+      "explanation": "Vladimir Makarov is the main antagonist throughout the Modern Warfare campaign."
+    },
+    {
+      "question": "What is the codename for the SAS Task Force in Modern Warfare 2?",
+      "options": ["Task Force 141", "Bravo Team", "Spartan Team", "Ghost Squad"],
+      "correct": "Task Force 141",
+      "explanation": "Task Force 141 is the elite special operations unit led by Captain Price in Modern Warfare 2."
+    },
+    {
+      "question": "Who is the main antagonist in Call of Duty Modern Warfare 3?",
+      "options": ["Makarov", "Roach", "Shepherd", "Soap"],
+      "correct": "Makarov",
+      "explanation": "Vladimir Makarov remains the main antagonist in Modern Warfare 3."
+    },
+    {
+      "question": "What is the name of Geralt's love interest in The Witcher 3?",
+      "options": ["Yennefer", "Triss", "Ciri", "Ves"],
+      "correct": "Yennefer",
+      "explanation": "Yennefer of Vengerberg is one of the main love interests and a major character in The Witcher 3."
+    },
+    {
+      "question": "What city does Geralt primarily operate out of in The Witcher 3?",
+      "options": ["Oxenfurt", "Novigrad", "Wyzima", "Beauclair"],
+      "correct": "Novigrad",
+      "explanation": "Novigrad is the largest city in the Northern Kingdoms and serves as a major hub in The Witcher 3."
+    },
+    {
+      "question": "What is Geralt's adoptive daughter's name in The Witcher 3?",
+      "options": ["Ciri", "Elara", "Keira", "Anna"],
+      "correct": "Ciri",
+      "explanation": "Ciri is Geralt's adoptive daughter and plays a crucial role in The Witcher 3's story."
+    },
+    {
+      "question": "What is the name of Geralt's horse in The Witcher 3?",
+      "options": ["Roach", "Shadow", "Storm", "Knight"],
+      "correct": "Roach",
+      "explanation": "Roach is the name of Geralt's horse throughout The Witcher 3."
+    },
+    {
+      "question": "What is the main threat in The Witcher 3: Wild Hunt?",
+      "options": ["The Nilfgaardian Empire", "The Wild Hunt", "The Scoia'tael", "The Lodge"],
+      "correct": "The Wild Hunt",
+      "explanation": "The Wild Hunt is an ancient supernatural force that serves as the main antagonist in The Witcher 3."
     }
   ]
 }
