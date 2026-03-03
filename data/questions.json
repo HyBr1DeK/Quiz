@@ -98,7 +98,7 @@
     },
     {
       "question": "In the Blood and Wine DLC, what is the name of the vampire boss Geralt confronts?",
-      "options": ["Orianna", "Detlaff", "Dettlaff", "Regis"],
+      "options": ["Orianna", "Detlaff", "Regis", "Nohreth"],
       "correct": "Detlaff",
       "explanation": "Detlaff van der Eretein is a higher vampire who serves as the primary antagonist of the Blood and Wine expansion (there are several vampires in Toussaint, but Detlaff is the one Geralt hunts)."
     },
