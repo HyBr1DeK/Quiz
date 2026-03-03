@@ -158,22 +158,22 @@ st.markdown("<hr style='border-color: #ffb6d9; opacity: 0.5;'>", unsafe_allow_ht
 # Hello Kitty Images Section
 st.markdown("<h3 style='text-align: center; color: #ff69b4; margin: 1.5rem 0;'>🎀 Welcome to Your Cute Quiz Adventure! 🎀</h3>", unsafe_allow_html=True)
 
-hk_col1, hk_col2, hk_col3 = st.columns(3)
+hk_col1, hk_col2, hk_col3 = st.columns([1, 2, 1])
 
-# Image 1 - Local Hello Kitty face (Left)
+# Empty left column
 with hk_col1:
-    try:
-        st.image("assets/hello_kitty.svg", width=180, caption="🎀 Hello Kitty", use_column_width=False)
-    except:
-        st.markdown("<p style='text-align: center; color: #ff69b4;'>🎀</p>", unsafe_allow_html=True)
+    st.empty()
 
-# Image 2 - Center decoration
+# Center - Hello Kitty image
 with hk_col2:
-    st.markdown("<div style='text-align: center; padding: 2rem;'><h2 style='font-size: 4rem;'>💖</h2><p style='color: #ff69b4; font-weight: bold;'>Your Cutest Quiz!</p></div>", unsafe_allow_html=True)
+    try:
+        st.image("assets/hello_kitty.svg", use_column_width=True)
+    except:
+        st.markdown("<p style='text-align: center; color: #ff69b4; font-size: 3rem;'>🎀</p>", unsafe_allow_html=True)
 
-# Image 3 - Another Hello Kitty (Right)
+# Empty right column
 with hk_col3:
-    st.markdown("<div style='text-align: center; padding: 2rem;'><h1 style='font-size: 5rem; margin: 0;'>🎀</h1><p style='color: #ff69b4; font-weight: bold; margin-top: 0.5rem;'>Adorable!</p></div>", unsafe_allow_html=True)
+    st.empty()
 
 st.markdown("<br>", unsafe_allow_html=True)
 
