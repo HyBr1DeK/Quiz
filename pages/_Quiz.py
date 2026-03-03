@@ -141,6 +141,15 @@ if current_q_index < len(category_questions):
     # Calculate remaining time
     elapsed = time.time() - st.session_state.timer_start
     remaining_time = max(0, int(30 - elapsed))
+    # refresh the page automatically every second so that the timer
+    # counts down and (importantly) we can detect when it hits zero even
+    # if the user does nothing.  Without this the timer only updates when
+    # the user clicks something, allowing them to bypass the 30s limit.
+    if remaining_time > 0:
+        # brief sleep to avoid hammering the CPU; the rerun will start a new
+        # execution cycle where remaining_time will be recalculated.
+        time.sleep(1)
+        st.experimental_rerun()
     
     # Timer and Score Display
     col_timer, col_score = st.columns([1, 1])
