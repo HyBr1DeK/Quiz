@@ -4,7 +4,66 @@ import pandas as pd
 
 st.set_page_config(page_title="Categories", layout="wide")
 
-st.title("📚 Categories Overview")
+# Custom CSS styling
+st.markdown("""
+    <style>
+    :root {
+        --primary: #00d4ff;
+        --secondary: #ff006e;
+        --dark-bg: #0a0e27;
+        --card-bg: #1a1f3a;
+        --text-light: #e0e7ff;
+    }
+    
+    .main {
+        background: linear-gradient(135deg, #0a0e27 0%, #1a0f35 100%);
+        color: #e0e7ff;
+    }
+    
+    h1 {
+        background: linear-gradient(90deg, #00d4ff, #ff006e);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: 900;
+        font-size: 3rem !important;
+        margin-bottom: 0.5rem;
+    }
+    
+    h2, h3 {
+        color: #00d4ff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+    }
+    
+    .stButton>button {
+        background: linear-gradient(135deg, #1a1f3a 0%, #2a2555 100%) !important;
+        border: 2px solid #00d4ff !important;
+        color: #e0e7ff !important;
+        font-weight: 600;
+        border-radius: 12px !important;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+    }
+    
+    .stButton>button:hover {
+        background: linear-gradient(135deg, #00d4ff15 0%, #ff006e15 100%) !important;
+        border-color: #ff006e !important;
+        box-shadow: 0 0 30px rgba(255, 0, 110, 0.5) !important;
+    }
+    
+    .metric-card {
+        background: linear-gradient(135deg, #1a1f3a 0%, #2a2555 100%);
+        border: 1px solid #00d4ff;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 0 15px rgba(0, 212, 255, 0.15);
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+st.markdown("<h1 style='text-align: center;'>📚 CATEGORIES OVERVIEW</h1>", unsafe_allow_html=True)
 
 def load_questions():
     with open('data/questions.json', 'r') as f:

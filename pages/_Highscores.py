@@ -4,7 +4,44 @@ import pandas as pd
 
 st.set_page_config(page_title="Highscores", layout="wide")
 
-st.title("🏆 Highscores")
+# Custom CSS styling
+st.markdown("""
+    <style>
+    .main {
+        background: linear-gradient(135deg, #0a0e27 0%, #1a0f35 100%);
+        color: #e0e7ff;
+    }
+    
+    h1 {
+        background: linear-gradient(90deg, #00d4ff, #ff006e);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: 900;
+        font-size: 3rem !important;
+    }
+    
+    h2, h3 {
+        color: #00d4ff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    .stDataFrame {
+        background: rgba(26, 31, 58, 0.5);
+        border: 1px solid #00d4ff;
+        border-radius: 10px;
+    }
+    
+    .stInfo {
+        background: rgba(0, 212, 255, 0.1) !important;
+        border: 1px solid #00d4ff !important;
+        border-radius: 10px !important;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+st.markdown("<h1 style='text-align: center;'>🏆 LEADERBOARD</h1>", unsafe_allow_html=True)
 
 def load_highscores():
     with open('data/highscores.json', 'r') as f:
