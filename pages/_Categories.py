@@ -45,10 +45,10 @@ st.markdown("""
         border-radius: 20px;
         padding: 20px;
         box-shadow: 0 4px 12px rgba(255, 105, 180, 0.15);
-        color: #000 !important;           /* ensure metric text is readable */
+        color: #ff69b4 !important;           /* pink text instead of black */
     }
     .stMetric * {
-        color: #000 !important;
+        color: #ff69b4 !important;
     }
 
     .stDataFrame {
@@ -61,10 +61,10 @@ st.markdown("""
         border: 2px solid #ffb6d9 !important;
         border-radius: 15px !important;
         background: linear-gradient(135deg, #fff0f5 0%, #ffffff 100%);
-        color: #000 !important;               /* expander header text */
+        color: #ff69b4 !important;               /* expander header text pink */
     }
     .stExpander * {
-        color: #000 !important;               /* expander inner content */
+        color: #ff69b4 !important;               /* expander inner content pink */
     }
     </style>
     """, unsafe_allow_html=True)

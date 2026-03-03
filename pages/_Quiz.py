@@ -68,12 +68,11 @@ st.markdown("""
         border-radius: 20px;
         padding: 15px;
         box-shadow: 0 4px 12px rgba(255, 105, 180, 0.15);
-        color: #000 !important;                  /* ensure text is dark */
+        color: #ff69b4 !important;               /* pink text instead of black */
     }
-    /* make sure any text inside metrics is legible even on light
-       backgrounds or when Streamlit applies its own coloring */
+    /* make sure any text inside metrics keeps the pink color */
     .stMetric * {
-        color: #000 !important;
+        color: #ff69b4 !important;
     }
     
     .stProgress > div > div > div > div {
