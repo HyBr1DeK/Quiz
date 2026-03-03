@@ -1,96 +1,6 @@
 {
   "Games": [
     {
-      "question": "In what year does Cyberpunk 2077 take place?",
-      "options": ["2045", "2077", "2089", "2100"],
-      "correct": "2077",
-      "explanation": "Cyberpunk 2077 is set in the year 2077 in Night City, a metropolis on the west coast."
-    },
-    {
-      "question": "What is the name of the protagonist in Cyberpunk 2077?",
-      "options": ["V", "Johnny", "Jackie", "Delamain"],
-      "correct": "V",
-      "explanation": "V is the customizable protagonist you play as in Cyberpunk 2077."
-    },
-    {
-      "question": "Which corporation is the primary antagonist in Cyberpunk 2077's main story?",
-      "options": ["Militech", "Arasaka", "Trauma Team", "Tyger Claws"],
-      "correct": "Arasaka",
-      "explanation": "Arasaka is a major megacorporation and plays a key role in the main plot of Cyberpunk 2077."
-    },
-    {
-      "question": "What is the name of the AI that talks to you in Cyberpunk 2077?",
-      "options": ["EDI", "Wheatley", "Johnny Silverhand", "GLaDOS"],
-      "correct": "Johnny Silverhand",
-      "explanation": "Johnny Silverhand, a legendary rockerboy, appears as an AI construct in your neural implant."
-    },
-    {
-      "question": "What is the main currency in Cyberpunk 2077?",
-      "options": ["Credits", "Eddies", "Nuyen", "Bits"],
-      "correct": "Eddies",
-      "explanation": "Eddies are the primary currency used throughout Cyberpunk 2077."
-    },
-    {
-      "question": "What is the day/night cycle mechanic called in Dying Light?",
-      "options": ["Daybreak", "Sunlight Cycle", "Night Terror", "Day/Night Dynamic"],
-      "correct": "Day/Night Dynamic",
-      "explanation": "During day, zombies are slow but vulnerable; at night, they become much more dangerous and active."
-    },
-    {
-      "question": "What is the name of the protagonist in the original Dying Light?",
-      "options": ["Kyle Crane", "Aiden Caldwell", "Harran", "Rais"],
-      "correct": "Kyle Crane",
-      "explanation": "Kyle Crane is the main character in the original Dying Light, sent to a quarantine zone."
-    },
-    {
-      "question": "What is the name of the quarantine zone in the original Dying Light?",
-      "options": ["Harran", "Villedor", "Paradise Grove", "Old Towne"],
-      "correct": "Harran",
-      "explanation": "Harran is the Turkish city that serves as the setting for the original Dying Light."
-    },
-    {
-      "question": "What type of virus creates the zombies in Dying Light?",
-      "options": ["T-Virus", "Harran Virus", "Blacklight Virus", "Green Flu"],
-      "correct": "Harran Virus",
-      "explanation": "The Harran Virus is the virus that transforms people into zombies in Dying Light."
-    },
-    {
-      "question": "What is the name of the protagonist in Dying Light 2?",
-      "options": ["Kyle Crane", "Aiden Caldwell", "Jade", "Frank"],
-      "correct": "Aiden Caldwell",
-      "explanation": "Aiden Caldwell is the main character in Dying Light 2: Stay Human."
-    },
-    {
-      "question": "What is the name of the famous airport mission in Call of Duty Modern Warfare?",
-      "options": ["All Ghillied Up", "Loose Ends", "Makarov's Revenge", "Turbulence"],
-      "correct": "Loose Ends",
-      "explanation": "Loose Ends is the mission featuring the controversial airport scene in Modern Warfare."
-    },
-    {
-      "question": "Who is Captain 'Roach' loyal to in Call of Duty Modern Warfare?",
-      "options": ["Captain MacTavish", "General Shepherd", "Price", "Gaz"],
-      "correct": "Captain MacTavish",
-      "explanation": "Roach follows the orders of Captain MacTavish throughout Modern Warfare."
-    },
-    {
-      "question": "What is Makarov's full name in Call of Duty Modern Warfare?",
-      "options": ["Vladimir Makarov", "Sergei Makarov", "Arkady Makarov", "Nikolai Makarov"],
-      "correct": "Vladimir Makarov",
-      "explanation": "Vladimir Makarov is the main antagonist throughout the Modern Warfare campaign."
-    },
-    {
-      "question": "What is the codename for the SAS Task Force in Modern Warfare 2?",
-      "options": ["Task Force 141", "Bravo Team", "Spartan Team", "Ghost Squad"],
-      "correct": "Task Force 141",
-      "explanation": "Task Force 141 is the elite special operations unit led by Captain Price in Modern Warfare 2."
-    },
-    {
-      "question": "Who is the main antagonist in Call of Duty Modern Warfare 3?",
-      "options": ["Makarov", "Roach", "Shepherd", "Soap"],
-      "correct": "Makarov",
-      "explanation": "Vladimir Makarov remains the main antagonist in Modern Warfare 3."
-    },
-    {
       "question": "What is the name of Geralt's love interest in The Witcher 3?",
       "options": ["Yennefer", "Triss", "Ciri", "Ves"],
       "correct": "Yennefer",
@@ -119,6 +29,162 @@
       "options": ["The Nilfgaardian Empire", "The Wild Hunt", "The Scoia'tael", "The Lodge"],
       "correct": "The Wild Hunt",
       "explanation": "The Wild Hunt is an ancient supernatural force that serves as the main antagonist in The Witcher 3."
+    },
+    {
+      "question": "How many signs does Geralt have in The Witcher 3?",
+      "options": ["3", "4", "5", "6"],
+      "correct": "5",
+      "explanation": "Geralt has 5 signs: Aard, Axii, Igni, Quen, and Yrden."
+    },
+    {
+      "question": "What is the name of Geralt's witcher school?",
+      "options": ["School of the Griffin", "School of the Wolf", "School of the Cat", "School of the Bear"],
+      "correct": "School of the Wolf",
+      "explanation": "Geralt trained at the School of the Wolf, where he received his witcher training."
+    },
+    {
+      "question": "Which sorceress is a major character in The Witcher 3's secondary romance?",
+      "options": ["Yennefer", "Triss", "Keira", "Philippa"],
+      "correct": "Triss",
+      "explanation": "Triss Merigold is the other main romance option in The Witcher 3 alongside Yennefer."
+    },
+    {
+      "question": "What is the name of the rebel city in The Witcher 3?",
+      "options": ["Oxenfurt", "Skellige", "Novigrad", "Beauclair"],
+      "correct": "Skellige",
+      "explanation": "Skellige is a group of islands and serves as an important location in The Witcher 3."
+    },
+    {
+      "question": "What deadly monster hunt is known for being particularly difficult in The Witcher 3?",
+      "options": ["Griffin", "Basilisk", "Leshen", "Djinn"],
+      "correct": "Leshen",
+      "explanation": "The Leshen is a dangerous forest guardian often considered one of the toughest hunts in The Witcher 3."
+    },
+    {
+      "question": "What is the protagonist's name in Red Dead Redemption 1?",
+      "options": ["John Marston", "Arthur Morgan", "Jack Marston", "Dutch van der Linde"],
+      "correct": "John Marston",
+      "explanation": "John Marston is the main protagonist in the original Red Dead Redemption."
+    },
+    {
+      "question": "What is the protagonist's name in Red Dead Redemption 2?",
+      "options": ["John Marston", "Arthur Morgan", "Jack Marston", "Hosea Matthews"],
+      "correct": "Arthur Morgan",
+      "explanation": "Arthur Morgan is the main protagonist and narrator in Red Dead Redemption 2."
+    },
+    {
+      "question": "What is the name of the gang in Red Dead Redemption 2?",
+      "options": ["O'Driscoll Gang", "Van der Linde Gang", "Skinner Brothers", "Lemoyne Raiders"],
+      "correct": "Van der Linde Gang",
+      "explanation": "The Van der Linde Gang is the primary gang led by Dutch van der Linde in Red Dead Redemption 2."
+    },
+    {
+      "question": "Which state is the primary setting for Red Dead Redemption 1?",
+      "options": ["New Hanover", "West Elizabeth", "San Andreas", "Nuevo Paraíso"],
+      "correct": "New Hanover",
+      "explanation": "New Hanover is the main state where most of Red Dead Redemption 1 takes place."
+    },
+    {
+      "question": "What year does Red Dead Redemption 2 take place?",
+      "options": ["1900", "1907", "1911", "1915"],
+      "correct": "1911",
+      "explanation": "Red Dead Redemption 2 is set in 1911, primarily during the decline of the Wild West."
+    },
+    {
+      "question": "What is John Marston's primary weapon in Red Dead Redemption 1?",
+      "options": ["Cattleman Revolver", "Mauser Pistol", "Explosive Rifle", "Sawed-off Shotgun"],
+      "correct": "Cattleman Revolver",
+      "explanation": "The Cattleman Revolver is John Marston's iconic weapon in Red Dead Redemption 1."
+    },
+    {
+      "question": "What is the name of the town where most of Red Dead Redemption 1's story takes place?",
+      "options": ["Valentine", "Blackwater", "Armadillo", "Thieves Landing"],
+      "correct": "Armadillo",
+      "explanation": "Armadillo is the primary town in Red Dead Redemption 1 where John Marston operates."
+    },
+    {
+      "question": "Who is Dutch van der Linde's right-hand man in Red Dead Redemption 2?",
+      "options": ["Arthur Morgan", "Micah Bell", "Hosea Matthews", "Bill Williamson"],
+      "correct": "Hosea Matthews",
+      "explanation": "Hosea Matthews is a founding member and one of Dutch's most trusted advisors in the gang."
+    },
+    {
+      "question": "What is the main currency in Red Dead Redemption 2?",
+      "options": ["Gold Bars", "Dollars", "Cash", "Treasure"],
+      "correct": "Dollars",
+      "explanation": "Dollars are the primary currency used throughout Red Dead Redemption 2."
+    },
+    {
+      "question": "What is the name of the rival gang to the Van der Linde Gang?",
+      "options": ["Gray Family", "O'Driscoll Gang", "Lemoyne Raiders", "Skinner Brothers"],
+      "correct": "O'Driscoll Gang",
+      "explanation": "The O'Driscoll Gang is one of the main rival gangs with conflict throughout Red Dead Redemption 2."
+    },
+    {
+      "question": "What is the setting of Dying Light in terms of time period?",
+      "options": ["Medieval times", "Modern day", "Post-apocalyptic", "Far future"],
+      "correct": "Modern day",
+      "explanation": "Dying Light is set in modern times in the quarantined city of Harran."
+    },
+    {
+      "question": "What is the day/night cycle mechanic in Dying Light?",
+      "options": ["Daybreak", "Sunlight Cycle", "Night Terror", "Day/Night Dynamic"],
+      "correct": "Day/Night Dynamic",
+      "explanation": "During day, zombies are slow but vulnerable; at night, they become much more dangerous and active."
+    },
+    {
+      "question": "What is the name of the protagonist in the original Dying Light?",
+      "options": ["Kyle Crane", "Aiden Caldwell", "Harran", "Rais"],
+      "correct": "Kyle Crane",
+      "explanation": "Kyle Crane is the main character in the original Dying Light, sent to a quarantine zone."
+    },
+    {
+      "question": "What is the primary setting in the original Dying Light?",
+      "options": ["Harran", "Villedor", "Paradise Grove", "Old Towne"],
+      "correct": "Harran",
+      "explanation": "Harran is the Turkish city that serves as the setting for the original Dying Light."
+    },
+    {
+      "question": "What type of virus creates the zombies in Dying Light?",
+      "options": ["T-Virus", "Harran Virus", "Blacklight Virus", "Green Flu"],
+      "correct": "Harran Virus",
+      "explanation": "The Harran Virus is the virus that transforms people into zombies in Dying Light."
+    },
+    {
+      "question": "What is the name of the protagonist in Dying Light 2?",
+      "options": ["Kyle Crane", "Aiden Caldwell", "Jade", "Frank"],
+      "correct": "Aiden Caldwell",
+      "explanation": "Aiden Caldwell is the main character in Dying Light 2: Stay Human."
+    },
+    {
+      "question": "What is the setting of Dying Light 2?",
+      "options": ["Harran", "Villedor", "Paradise Grove", "New City"],
+      "correct": "Villedor",
+      "explanation": "Villedor is the European city where Dying Light 2: Stay Human takes place."
+    },
+    {
+      "question": "What is a key gameplay mechanic in Dying Light involving parkour?",
+      "options": ["Tree climbing", "Wall running", "Parkour movement", "Zip-lining"],
+      "correct": "Parkour movement",
+      "explanation": "Parkour movement is a core mechanic that allows players to move fluidly through the environment."
+    },
+    {
+      "question": "What is the antagonist faction in Dying Light 2?",
+      "options": ["Peacekeepers", "Bandits", "The Renegades", "Infected"],
+      "correct": "Peacekeepers",
+      "explanation": "The Peacekeepers are a military faction that serves as an antagonist force in Dying Light 2."
+    },
+    {
+      "question": "In what year does Cyberpunk 2077 take place?",
+      "options": ["2045", "2077", "2089", "2100"],
+      "correct": "2077",
+      "explanation": "Cyberpunk 2077 is set in the year 2077 in Night City, a metropolis on the west coast."
+    },
+    {
+      "question": "What is the name of the AI that talks to you in Cyberpunk 2077?",
+      "options": ["EDI", "Wheatley", "Johnny Silverhand", "GLaDOS"],
+      "correct": "Johnny Silverhand",
+      "explanation": "Johnny Silverhand, a legendary rockerboy, appears as an AI construct in your neural implant."
     }
   ]
 }
