@@ -238,8 +238,8 @@ if current_q_index < len(category_questions):
                 
                 explanation_ph.info(f"📖 {question_data['explanation']}")
                 
-                # give user a moment to read
-                time.sleep(2)
+                # give user a moment to read; extended per request
+                time.sleep(5)
                 # clear the placeholders before moving on so the next run
                 # doesn’t inadvertently show them
                 feedback_ph.empty()
