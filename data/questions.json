@@ -1,37 +1,43 @@
 {
-  "Games": [
+  "Witcher 3: The Wild Hunt": [
     {
-      "question": "What is the name of Geralt's love interest in The Witcher 3?",
+      "question": "What is Geralt's full name?",
+      "options": ["Geralt of Rivia", "Geralt of Kaer Morhen", "Geralt Whitehair", "Geralt the Witcher"],
+      "correct": "Geralt of Rivia",
+      "explanation": "Geralt of Rivia is the full name of the white-haired witcher protagonist."
+    },
+    {
+      "question": "What is the name of Geralt's love interest?",
       "options": ["Yennefer", "Triss", "Ciri", "Ves"],
       "correct": "Yennefer",
       "explanation": "Yennefer of Vengerberg is one of the main love interests and a major character in The Witcher 3."
     },
     {
-      "question": "What city does Geralt primarily operate out of in The Witcher 3?",
+      "question": "What city does Geralt primarily operate out of?",
       "options": ["Oxenfurt", "Novigrad", "Wyzima", "Beauclair"],
       "correct": "Novigrad",
-      "explanation": "Novigrad is the largest city in the Northern Kingdoms and serves as a major hub in The Witcher 3."
+      "explanation": "Novigrad is the largest city in the Northern Kingdoms and serves as a major hub."
     },
     {
-      "question": "What is Geralt's adoptive daughter's name in The Witcher 3?",
+      "question": "What is Geralt's adoptive daughter's name?",
       "options": ["Ciri", "Elara", "Keira", "Anna"],
       "correct": "Ciri",
-      "explanation": "Ciri is Geralt's adoptive daughter and plays a crucial role in The Witcher 3's story."
+      "explanation": "Ciri is Geralt's adoptive daughter and plays a crucial role in the story."
     },
     {
-      "question": "What is the name of Geralt's horse in The Witcher 3?",
+      "question": "What is the name of Geralt's horse?",
       "options": ["Roach", "Shadow", "Storm", "Knight"],
       "correct": "Roach",
       "explanation": "Roach is the name of Geralt's horse throughout The Witcher 3."
     },
     {
-      "question": "What is the main threat in The Witcher 3: Wild Hunt?",
+      "question": "What is the main threat in The Witcher 3?",
       "options": ["The Nilfgaardian Empire", "The Wild Hunt", "The Scoia'tael", "The Lodge"],
       "correct": "The Wild Hunt",
-      "explanation": "The Wild Hunt is an ancient supernatural force that serves as the main antagonist in The Witcher 3."
+      "explanation": "The Wild Hunt is an ancient supernatural force that serves as the main antagonist."
     },
     {
-      "question": "How many signs does Geralt have in The Witcher 3?",
+      "question": "How many signs does Geralt have?",
       "options": ["3", "4", "5", "6"],
       "correct": "5",
       "explanation": "Geralt has 5 signs: Aard, Axii, Igni, Quen, and Yrden."
@@ -43,115 +49,483 @@
       "explanation": "Geralt trained at the School of the Wolf, where he received his witcher training."
     },
     {
-      "question": "Which sorceress is a major character in The Witcher 3's secondary romance?",
+      "question": "Which sorceress is the other main romance option?",
       "options": ["Yennefer", "Triss", "Keira", "Philippa"],
       "correct": "Triss",
-      "explanation": "Triss Merigold is the other main romance option in The Witcher 3 alongside Yennefer."
+      "explanation": "Triss Merigold is the other main romance option alongside Yennefer."
     },
     {
-      "question": "What is the name of the rebel city in The Witcher 3?",
+      "question": "What is the name of the group of islands in the game?",
       "options": ["Oxenfurt", "Skellige", "Novigrad", "Beauclair"],
       "correct": "Skellige",
-      "explanation": "Skellige is a group of islands and serves as an important location in The Witcher 3."
+      "explanation": "Skellige is a group of islands and serves as an important location."
     },
     {
-      "question": "What deadly monster hunt is known for being particularly difficult in The Witcher 3?",
+      "question": "What deadly monster hunt is known for being particularly difficult?",
       "options": ["Griffin", "Basilisk", "Leshen", "Djinn"],
       "correct": "Leshen",
-      "explanation": "The Leshen is a dangerous forest guardian often considered one of the toughest hunts in The Witcher 3."
+      "explanation": "The Leshen is a dangerous forest guardian often considered one of the toughest hunts."
     },
     {
-      "question": "What is the protagonist's name in Red Dead Redemption 1?",
+      "question": "Who is the ruler of Skellige?",
+      "options": ["Crach an Craite", "Birna Bran", "Halvard Galkus", "Svanrige"],
+      "correct": "Crach an Craite",
+      "explanation": "Crach an Craite is the jarl (ruler) of Skellige."
+    },
+    {
+      "question": "What is Ciri's alternate name?",
+      "options": ["The Lady of Vengerberg", "The Ashen One", "The Lady of Spaces", "The Lioness of Cintra"],
+      "correct": "The Lady of Spaces",
+      "explanation": "Ciri is known as the Lady of Spaces due to her ability to travel between worlds."
+    },
+    {
+      "question": "Which merchant in Novigrad is known for Black Market deals?",
+      "options": ["Vivienne", "Gaunter O'Dimm", "Whoreson Junior", "Cleaver"],
+      "correct": "Vivienne",
+      "explanation": "Vivienne is a merchant who deals in black market goods in Novigrad."
+    },
+    {
+      "question": "What is the name of the main bank/carnal house leader?",
+      "options": ["Vivienne", "Gaunter O'Dimm", "Whoreson Junior", "Cleaver"],
+      "correct": "Whoreson Junior",
+      "explanation": "Whoreson Junior is a crime boss in Novigrad who runs various criminal enterprises."
+    },
+    {
+      "question": "What title does the Emperor of Nilfgaard have?",
+      "options": ["King", "Sultan", "White Flame", "Dark Lord"],
+      "correct": "White Flame",
+      "explanation": "The Emperor is referred to as the White Flame of the North."
+    },
+    {
+      "question": "What is the name of the vampire that appears in the game?",
+      "options": ["Orianna", "Detlaff", "Dettlaff", "Regis"],
+      "correct": "Detlaff",
+      "explanation": "Detlaff van der Eretein is a higher vampire that appears in the Blood and Wine DLC."
+    },
+    {
+      "question": "What is the main setting of the Blood and Wine DLC?",
+      "options": ["Skellige", "Novigrad", "Beauclair", "Oxenfurt"],
+      "correct": "Beauclair",
+      "explanation": "Beauclair is the main setting of the Blood and Wine expansion."
+    },
+    {
+      "question": "What is the main quest about finding in The Witcher 3?",
+      "options": ["A cure for a curse", "Ciri", "The Wild Hunt leader", "Ancient artifacts"],
+      "correct": "Ciri",
+      "explanation": "The main plot revolves around finding and protecting Ciri from the Wild Hunt."
+    },
+    {
+      "question": "What does 'witcher' mean in the game's lore?",
+      "options": ["Wizard", "Monster hunter", "Warrior", "Noble"],
+      "correct": "Monster hunter",
+      "explanation": "A witcher is specifically a monster hunter trained with mutations and magic."
+    }
+  ],
+  "Cyberpunk 2077": [
+    {
+      "question": "In what year does Cyberpunk 2077 take place?",
+      "options": ["2045", "2077", "2089", "2100"],
+      "correct": "2077",
+      "explanation": "Cyberpunk 2077 is set in the year 2077 in Night City."
+    },
+    {
+      "question": "What is the name of the protagonist?",
+      "options": ["V", "Johnny", "Jackie", "Delamain"],
+      "correct": "V",
+      "explanation": "V is the customizable protagonist you play as."
+    },
+    {
+      "question": "What is the main AI that talks to you called?",
+      "options": ["EDI", "Wheatley", "Johnny Silverhand", "GLaDOS"],
+      "correct": "Johnny Silverhand",
+      "explanation": "Johnny Silverhand appears as an AI construct in your neural implant."
+    },
+    {
+      "question": "What is the main currency?",
+      "options": ["Credits", "Eddies", "Nuyen", "Bits"],
+      "correct": "Eddies",
+      "explanation": "Eddies are the primary currency used throughout Cyberpunk 2077."
+    },
+    {
+      "question": "Which corporation is the primary antagonist?",
+      "options": ["Militech", "Arasaka", "Trauma Team", "Tyger Claws"],
+      "correct": "Arasaka",
+      "explanation": "Arasaka is a major megacorporation and plays a key role in the main plot."
+    },
+    {
+      "question": "What does V stand for?",
+      "options": ["Victor", "Valerie", "Nothing specific", "Void"],
+      "correct": "Nothing specific",
+      "explanation": "V's name is intentionally vague and not given a full name."
+    },
+    {
+      "question": "What is Night City located in?",
+      "options": ["California", "Nevada", "Texas", "Arizona"],
+      "correct": "California",
+      "explanation": "Night City is a metropolis on the west coast of what was once California."
+    },
+    {
+      "question": "What type of modification does V receive at the beginning?",
+      "options": ["Combat implant", "Biochip", "Neural interface", "Cybernetic arm"],
+      "correct": "Biochip",
+      "explanation": "V receives a biochip implant that contains Johnny Silverhand's consciousness."
+    },
+    {
+      "question": "Who is Jackie in the prologue?",
+      "options": ["V's enemy", "V's gang member", "A corpo agent", "A police officer"],
+      "correct": "V's gang member",
+      "explanation": "Jackie is V's partner and friend who appears in the prologue."
+    },
+    {
+      "question": "What is the name of the fixer that offers V many jobs?",
+      "options": ["Takemura", "Qian", "Rogue", "Padre"],
+      "correct": "Rogue",
+      "explanation": "Rogue is a veteran fixer who becomes important to V's story."
+    },
+    {
+      "question": "What megacorporation controls most of Night City's police?",
+      "options": ["Arasaka", "Militech", "Kang Tao", "EuroDyne"],
+      "correct": "Arasaka",
+      "explanation": "Arasaka has significant influence over Night City's security apparatus."
+    },
+    {
+      "question": "What district is known as the wealthy area of Night City?",
+      "options": ["Watson", "Santo Domingo", "Westbrook", "The Badlands"],
+      "correct": "Westbrook",
+      "explanation": "Westbrook is the wealthy, upscale district of Night City."
+    },
+    {
+      "question": "What is the purpose of the Ripperdoc?",
+      "options": ["Doctor", "Cybernetic technician", "Street surgeon", "All of the above"],
+      "correct": "All of the above",
+      "explanation": "Ripperdocs are underground surgeons who install cybernetic modifications."
+    },
+    {
+      "question": "What organization hunts rogue AIs?",
+      "options": ["Militech", "Arasaka", "NetWatch", "Trauma Team"],
+      "correct": "NetWatch",
+      "explanation": "NetWatch is a government agency that hunts rogue AIs and hackers."
+    },
+    {
+      "question": "What is the name of the street gang in Watson?",
+      "options": ["Tyger Claws", "Moxes", "Maelstrom", "Animals"],
+      "correct": "Tyger Claws",
+      "explanation": "Tyger Claws is the primary gang operating in Watson."
+    },
+    {
+      "question": "What attribute increases hacking abilities?",
+      "options": ["Reflexes", "Intelligence", "Technical Ability", "Cool"],
+      "correct": "Intelligence",
+      "explanation": "Intelligence increases your hacking and quickhacking abilities."
+    },
+    {
+      "question": "What is V's life path choice in the prologue called?",
+      "options": ["Origin story", "Background", "Life path", "Character class"],
+      "correct": "Life path",
+      "explanation": "Life paths are the three different starting backgrounds for V."
+    },
+    {
+      "question": "How many life paths can the player choose from?",
+      "options": ["2", "3", "4", "5"],
+      "correct": "3",
+      "explanation": "There are 3 life paths: Nomad, Street Kid, and Corpo."
+    },
+    {
+      "question": "What disease does V contract through the biochip?",
+      "options": ["Cyberpsychosis", "Uninstall protocol", "Burnout", "Chiplock"],
+      "correct": "Uninstall protocol",
+      "explanation": "V's biochip contains an uninstall protocol that slowly kills them."
+    },
+    {
+      "question": "What is the name of the black market trading hub?",
+      "options": ["The Afterlife", "Lizzie's", "Cloud", "Samurai"],
+      "correct": "The Afterlife",
+      "explanation": "The Afterlife is a legendary club where corporate agents and mercenaries gather."
+    }
+  ],
+  "Red Dead Redemption 1": [
+    {
+      "question": "What is the protagonist's name?",
       "options": ["John Marston", "Arthur Morgan", "Jack Marston", "Dutch van der Linde"],
       "correct": "John Marston",
       "explanation": "John Marston is the main protagonist in the original Red Dead Redemption."
     },
     {
-      "question": "What is the protagonist's name in Red Dead Redemption 2?",
-      "options": ["John Marston", "Arthur Morgan", "Jack Marston", "Hosea Matthews"],
+      "question": "Which state is the primary setting?",
+      "options": ["New Hanover", "West Elizabeth", "San Andreas", "Nuevo Paraíso"],
+      "correct": "New Hanover",
+      "explanation": "New Hanover is the main state where most of RDR1 takes place."
+    },
+    {
+      "question": "What is John Marston's primary weapon?",
+      "options": ["Cattleman Revolver", "Mauser Pistol", "Explosive Rifle", "Sawed-off Shotgun"],
+      "correct": "Cattleman Revolver",
+      "explanation": "The Cattleman Revolver is John Marston's iconic weapon."
+    },
+    {
+      "question": "What is the name of the town where most of the story takes place?",
+      "options": ["Valentine", "Blackwater", "Armadillo", "Thieves Landing"],
+      "correct": "Armadillo",
+      "explanation": "Armadillo is the primary town where John Marston operates."
+    },
+    {
+      "question": "Who is John working for in RDR1?",
+      "options": ["Sheriff", "Mexican general", "Government agent", "Mafia boss"],
+      "correct": "Government agent",
+      "explanation": "Agent Ross forces John to help him apprehend other outlaws."
+    },
+    {
+      "question": "What is the name of John's son?",
+      "options": ["Jack Marston", "Robert Marston", "Billy Marston", "James Marston"],
+      "correct": "Jack Marston",
+      "explanation": "Jack Marston is John's son and appears in the epilogue."
+    },
+    {
+      "question": "What is the primary currency in RDR1?",
+      "options": ["Gold Bars", "Dollars", "Cash", "Treasure"],
+      "correct": "Dollars",
+      "explanation": "Dollars are the primary currency used throughout the game."
+    },
+    {
+      "question": "What is the name of Mexico's main town?",
+      "options": ["San Fierro", "El Paso", "Mexico City", "Escalera"],
+      "correct": "Escalera",
+      "explanation": "Escalera is a major settlement in Nuevo Paraíso, Mexico."
+    },
+    {
+      "question": "How many main chapters are in RDR1?",
+      "options": ["3", "5", "7", "10"],
+      "correct": "5",
+      "explanation": "The story has 5 main chapters followed by an epilogue."
+    },
+    {
+      "question": "What is Agent Edgar Ross's goal?",
+      "options": ["Become rich", "Catch dangerous outlaws", "Become sheriff", "Write a book"],
+      "correct": "Catch dangerous outlaws",
+      "explanation": "Agent Ross wants John to help him capture wanted criminals."
+    },
+    {
+      "question": "What is the name of the Mexican revolutionary?",
+      "options": ["Javier Escuella", "Agustin Madrazo", "Luisa Fortuna", "Emilio Unique"],
+      "correct": "Agustin Madrazo",
+      "explanation": "Agustin Madrazo is a character involved in revolutionary movements."
+    },
+    {
+      "question": "What is the main mission type in RDR1?",
+      "options": ["Heist", "Bounty hunting", "Main story missions", "All of the above"],
+      "correct": "All of the above",
+      "explanation": "The game features various mission types including bounties, story missions, and heists."
+    },
+    {
+      "question": "What is the name of the final mission?",
+      "options": ["The Last Stand", "Edge of the World", "Remember Redemption", "The End of the World"],
+      "correct": "Remember Redemption",
+      "explanation": "Remember Redemption is the final mission of RDR1."
+    },
+    {
+      "question": "What is John Marston searching for throughout the game?",
+      "options": ["His wife", "His former gang", "Redemption", "Gold"],
+      "correct": "His former gang",
+      "explanation": "John is forced to hunt down members of his former outlaw gang."
+    },
+    {
+      "question": "What is the epilogue controlled by?",
+      "options": ["John Marston", "Jack Marston", "Agent Ross", "Unknown character"],
+      "correct": "Jack Marston",
+      "explanation": "The epilogue is played as Jack Marston, John's son."
+    },
+    {
+      "question": "What animal is John known for breaking and riding?",
+      "options": ["Wild horses", "Mules", "Donkeys", "All animals"],
+      "correct": "Wild horses",
+      "explanation": "John can break and tame wild horses throughout the game."
+    },
+    {
+      "question": "What is the main law enforcement group in RDR1?",
+      "options": ["Police", "Rangers", "Marshals", "All of the above"],
+      "correct": "All of the above",
+      "explanation": "Various law enforcement groups exist depending on the region."
+    },
+    {
+      "question": "What is the name of the gunslinger mechanics?",
+      "options": ["Dead Eye", "Quick Draw", "Gunslinger mode", "Precision aim"],
+      "correct": "Dead Eye",
+      "explanation": "Dead Eye is the special ability that slows time for precise aiming."
+    },
+    {
+      "question": "How many wanted levels are there?",
+      "options": ["3", "4", "5", "6"],
+      "correct": "5",
+      "explanation": "There are 5 wanted levels that increase with criminal activity."
+    },
+    {
+      "question": "What is John's catchphrase?",
+      "options": ["I'm an outlaw", "I'm trying", "I ain't no fool", "Nothing is true"],
+      "correct": "I'm trying",
+      "explanation": "John often says he's 'trying' to be a better man in RDR1."
+    }
+  ],
+  "Red Dead Redemption 2": [
+    {
+      "question": "What is the protagonist's name?",
+      "options": ["John Marston", "Arthur Morgan", "Jack Marston", "Dutch van der Linde"],
       "correct": "Arthur Morgan",
       "explanation": "Arthur Morgan is the main protagonist and narrator in Red Dead Redemption 2."
     },
     {
-      "question": "What is the name of the gang in Red Dead Redemption 2?",
-      "options": ["O'Driscoll Gang", "Van der Linde Gang", "Skinner Brothers", "Lemoyne Raiders"],
+      "question": "What is the name of the gang?",
+      "options": ["O'Driscoll Gang", "Van der Linde Gang", "Skinner Brothers", "Sadler Brothers"],
       "correct": "Van der Linde Gang",
-      "explanation": "The Van der Linde Gang is the primary gang led by Dutch van der Linde in Red Dead Redemption 2."
+      "explanation": "The Van der Linde Gang is the primary gang led by Dutch van der Linde."
     },
     {
-      "question": "Which state is the primary setting for Red Dead Redemption 1?",
-      "options": ["New Hanover", "West Elizabeth", "San Andreas", "Nuevo Paraíso"],
-      "correct": "New Hanover",
-      "explanation": "New Hanover is the main state where most of Red Dead Redemption 1 takes place."
-    },
-    {
-      "question": "What year does Red Dead Redemption 2 take place?",
+      "question": "What year does RDR2 take place?",
       "options": ["1900", "1907", "1911", "1915"],
       "correct": "1911",
-      "explanation": "Red Dead Redemption 2 is set in 1911, primarily during the decline of the Wild West."
+      "explanation": "RDR2 is set in 1911, primarily during the decline of the Wild West."
     },
     {
-      "question": "What is John Marston's primary weapon in Red Dead Redemption 1?",
-      "options": ["Cattleman Revolver", "Mauser Pistol", "Explosive Rifle", "Sawed-off Shotgun"],
-      "correct": "Cattleman Revolver",
-      "explanation": "The Cattleman Revolver is John Marston's iconic weapon in Red Dead Redemption 1."
-    },
-    {
-      "question": "What is the name of the town where most of Red Dead Redemption 1's story takes place?",
-      "options": ["Valentine", "Blackwater", "Armadillo", "Thieves Landing"],
-      "correct": "Armadillo",
-      "explanation": "Armadillo is the primary town in Red Dead Redemption 1 where John Marston operates."
-    },
-    {
-      "question": "Who is Dutch van der Linde's right-hand man in Red Dead Redemption 2?",
+      "question": "Who is Dutch van der Linde's right-hand man?",
       "options": ["Arthur Morgan", "Micah Bell", "Hosea Matthews", "Bill Williamson"],
       "correct": "Hosea Matthews",
-      "explanation": "Hosea Matthews is a founding member and one of Dutch's most trusted advisors in the gang."
+      "explanation": "Hosea Matthews is a founding member and one of Dutch's most trusted advisors."
     },
     {
-      "question": "What is the main currency in Red Dead Redemption 2?",
+      "question": "What is the main currency?",
       "options": ["Gold Bars", "Dollars", "Cash", "Treasure"],
       "correct": "Dollars",
-      "explanation": "Dollars are the primary currency used throughout Red Dead Redemption 2."
+      "explanation": "Dollars are the primary currency used throughout RDR2."
     },
     {
-      "question": "What is the name of the rival gang to the Van der Linde Gang?",
+      "question": "What is the rival gang to Van der Linde?",
       "options": ["Gray Family", "O'Driscoll Gang", "Lemoyne Raiders", "Skinner Brothers"],
       "correct": "O'Driscoll Gang",
-      "explanation": "The O'Driscoll Gang is one of the main rival gangs with conflict throughout Red Dead Redemption 2."
+      "explanation": "The O'Driscoll Gang is one of the main rival gangs with conflict throughout."
     },
     {
-      "question": "What is the setting of Dying Light in terms of time period?",
-      "options": ["Medieval times", "Modern day", "Post-apocalyptic", "Far future"],
-      "correct": "Modern day",
-      "explanation": "Dying Light is set in modern times in the quarantined city of Harran."
+      "question": "How many chapters are in RDR2?",
+      "options": ["5", "6", "8", "10"],
+      "correct": "6",
+      "explanation": "The main story has 6 chapters, plus an epilogue with 2 parts."
     },
     {
-      "question": "What is the day/night cycle mechanic in Dying Light?",
-      "options": ["Daybreak", "Sunlight Cycle", "Night Terror", "Day/Night Dynamic"],
-      "correct": "Day/Night Dynamic",
-      "explanation": "During day, zombies are slow but vulnerable; at night, they become much more dangerous and active."
+      "question": "What is Arthur's primary ailment throughout the game?",
+      "options": ["Tuberculosis", "Cholera", "Pneumonia", "Fever"],
+      "correct": "Tuberculosis",
+      "explanation": "Arthur contracts tuberculosis, which becomes central to his character arc."
     },
     {
-      "question": "What is the name of the protagonist in the original Dying Light?",
+      "question": "What is the name of Arthur's horse?",
+      "options": ["Roach", "Witness", "Blackjack", "Hamish"],
+      "correct": "Witness",
+      "explanation": "Witness is the default horse provided to Arthur in the game."
+    },
+    {
+      "question": "Who is one of Arthur's closest friends in the gang?",
+      "options": ["Hosea Matthews", "Dutch van der Linde", "John Marston", "All of the above"],
+      "correct": "All of the above",
+      "explanation": "Arthur has close relationships with multiple gang members."
+    },
+    {
+      "question": "What is the main mission type in RDR2?",
+      "options": ["Robbery", "Heist", "Story missions", "All of the above"],
+      "correct": "All of the above",
+      "explanation": "RDR2 features various mission types including robberies, heists, and main story missions."
+    },
+    {
+      "question": "Who betrays the gang?",
+      "options": ["Arthur", "Micah Bell", "Dutch", "John Marston"],
+      "correct": "Micah Bell",
+      "explanation": "Micah Bell is revealed to be an informant working for the government."
+    },
+    {
+      "question": "What is the name of the gang's camp leader?",
+      "options": ["Horseplay", "Pearson", "Karen", "Tilly"],
+      "correct": "Pearson",
+      "explanation": "Pearson is the camp's quartermaster and cook."
+    },
+    {
+      "question": "What state is the primary setting for most of RDR2?",
+      "options": ["New Hanover", "West Elizabeth", "Lemoyne", "Ambarino"],
+      "correct": "Lemoyne",
+      "explanation": "Lemoyne is the main setting for the majority of RDR2's story."
+    },
+    {
+      "question": "What is the epilogue set in?",
+      "options": ["1911", "1915", "1920", "1925"],
+      "correct": "1915",
+      "explanation": "The epilogue takes place in 1915, set as John Marston."
+    },
+    {
+      "question": "What is the name of the main city in Lemoyne?",
+      "options": ["Valentine", "Saint Denis", "Blackwater", "Rhodes"],
+      "correct": "Saint Denis",
+      "explanation": "Saint Denis is the largest and most prominent city in RDR2."
+    },
+    {
+      "question": "What is the Dead Eye mechanic called in RDR2?",
+      "options": ["Slow motion", "Dead Eye", "Quick Draw", "Precision Aim"],
+      "correct": "Dead Eye",
+      "explanation": "Dead Eye allows players to slow time and mark targets for precise shooting."
+    },
+    {
+      "question": "What is Arthur's main profession before becoming a fugitive?",
+      "options": ["Lawman", "Outlaw", "Rancher", "Farmer"],
+      "correct": "Outlaw",
+      "explanation": "Arthur is a career outlaw and member of the Van der Linde Gang."
+    },
+    {
+      "question": "What does Arthur write in his journal?",
+      "options": ["His thoughts", "Sketches", "Stories", "All of the above"],
+      "correct": "All of the above",
+      "explanation": "Arthur's journal includes his thoughts, sketches, and observations."
+    },
+    {
+      "question": "What is the final mission called?",
+      "options": ["The Last Stand", "Red Dead Redemption", "Epilogue: The End", "Way of the West"],
+      "correct": "Red Dead Redemption",
+      "explanation": "Red Dead Redemption is the final mission of the main campaign."
+    }
+  ],
+  "Dying Light 1-3": [
+    {
+      "question": "What is the protagonist's name in Dying Light 1?",
       "options": ["Kyle Crane", "Aiden Caldwell", "Harran", "Rais"],
       "correct": "Kyle Crane",
-      "explanation": "Kyle Crane is the main character in the original Dying Light, sent to a quarantine zone."
+      "explanation": "Kyle Crane is the main character in the original Dying Light."
     },
     {
-      "question": "What is the primary setting in the original Dying Light?",
+      "question": "What is the setting of Dying Light 1?",
       "options": ["Harran", "Villedor", "Paradise Grove", "Old Towne"],
       "correct": "Harran",
-      "explanation": "Harran is the Turkish city that serves as the setting for the original Dying Light."
+      "explanation": "Harran is the Turkish city that serves as the setting for Dying Light."
     },
     {
-      "question": "What type of virus creates the zombies in Dying Light?",
+      "question": "What type of virus creates the zombies?",
       "options": ["T-Virus", "Harran Virus", "Blacklight Virus", "Green Flu"],
       "correct": "Harran Virus",
-      "explanation": "The Harran Virus is the virus that transforms people into zombies in Dying Light."
+      "explanation": "The Harran Virus is the virus that transforms people into zombies."
     },
     {
-      "question": "What is the name of the protagonist in Dying Light 2?",
+      "question": "What is the day/night cycle mechanic called?",
+      "options": ["Daybreak", "Sunlight Cycle", "Night Terror", "Day/Night Dynamic"],
+      "correct": "Day/Night Dynamic",
+      "explanation": "During day, zombies are slow but vulnerable; at night, they become much more dangerous."
+    },
+    {
+      "question": "What is a key gameplay mechanic involving parkour?",
+      "options": ["Tree climbing", "Wall running", "Parkour movement", "Zip-lining"],
+      "correct": "Parkour movement",
+      "explanation": "Parkour movement is a core mechanic that allows fluid traversal through the environment."
+    },
+    {
+      "question": "Who is the antagonist in Dying Light 1?",
+      "options": ["Rais", "Tahir Malik", "The Colonel", "The Mother"],
+      "correct": "Rais",
+      "explanation": "Rais is the main antagonist operating out of the stadium in Harran."
+    },
+    {
+      "question": "What is the protagonist's name in Dying Light 2?",
       "options": ["Kyle Crane", "Aiden Caldwell", "Jade", "Frank"],
       "correct": "Aiden Caldwell",
       "explanation": "Aiden Caldwell is the main character in Dying Light 2: Stay Human."
@@ -160,31 +534,79 @@
       "question": "What is the setting of Dying Light 2?",
       "options": ["Harran", "Villedor", "Paradise Grove", "New City"],
       "correct": "Villedor",
-      "explanation": "Villedor is the European city where Dying Light 2: Stay Human takes place."
+      "explanation": "Villedor is the European city where Dying Light 2 takes place."
     },
     {
-      "question": "What is a key gameplay mechanic in Dying Light involving parkour?",
-      "options": ["Tree climbing", "Wall running", "Parkour movement", "Zip-lining"],
-      "correct": "Parkour movement",
-      "explanation": "Parkour movement is a core mechanic that allows players to move fluidly through the environment."
+      "question": "What is Aiden's defining characteristic?",
+      "options": ["He's infected", "He's a soldier", "He's superhuman", "He's a scientist"],
+      "correct": "He's infected",
+      "explanation": "Aiden is infected and must find a cure while navigating the city."
     },
     {
-      "question": "What is the antagonist faction in Dying Light 2?",
-      "options": ["Peacekeepers", "Bandits", "The Renegades", "Infected"],
+      "question": "What factions exist in Dying Light 2?",
+      "options": ["Peacekeepers", "Survivors", "Bandits", "All of the above"],
+      "correct": "All of the above",
+      "explanation": "Multiple factions including Peacekeepers, Survivors, and various bandit groups exist."
+    },
+    {
+      "question": "What is the main antagonist faction in Dying Light 2?",
+      "options": ["Peacekeepers", "Survivors", "The Renegades", "Infected"],
       "correct": "Peacekeepers",
-      "explanation": "The Peacekeepers are a military faction that serves as an antagonist force in Dying Light 2."
+      "explanation": "The Peacekeepers are a military faction that serves as an antagonist force."
     },
     {
-      "question": "In what year does Cyberpunk 2077 take place?",
-      "options": ["2045", "2077", "2089", "2100"],
-      "correct": "2077",
-      "explanation": "Cyberpunk 2077 is set in the year 2077 in Night City, a metropolis on the west coast."
+      "question": "What ability does Aiden have in Dying Light 2?",
+      "options": ["Enhanced parkour", "Enhanced senses", "Infected abilities", "All of the above"],
+      "correct": "All of the above",
+      "explanation": "Aiden's infection grants him enhanced abilities including parkour and senses."
     },
     {
-      "question": "What is the name of the AI that talks to you in Cyberpunk 2077?",
-      "options": ["EDI", "Wheatley", "Johnny Silverhand", "GLaDOS"],
-      "correct": "Johnny Silverhand",
-      "explanation": "Johnny Silverhand, a legendary rockerboy, appears as an AI construct in your neural implant."
+      "question": "What is Aiden searching for in Dying Light 2?",
+      "options": ["A cure", "His sister", "Survivors", "His past"],
+      "correct": "His sister",
+      "explanation": "Aiden is searching for his sister Mia throughout Dying Light 2."
+    },
+    {
+      "question": "How many safe zones are in Dying Light 1?",
+      "options": ["2", "3", "4", "5"],
+      "correct": "3",
+      "explanation": "There are 3 main safe zones in the original Dying Light."
+    },
+    {
+      "question": "What is the primary weapon type in Dying Light?",
+      "options": ["Guns", "Melee weapons", "Explosives", "All of the above"],
+      "correct": "Melee weapons",
+      "explanation": "Melee weapons are the primary weapons used against zombies."
+    },
+    {
+      "question": "What is Kyle's initial mission?",
+      "options": ["Investigate the outbreak", "Escape the city", "Deliver a package", "Meet a contact"],
+      "correct": "Deliver a package",
+      "explanation": "Kyle is sent to Harran to deliver a package to a contact."
+    },
+    {
+      "question": "What time limit is crucial in Dying Light?",
+      "options": ["Daytime", "Nighttime", "Sunset", "Sunrise"],
+      "correct": "Nighttime",
+      "explanation": "Nighttime is dangerous as zombies become much stronger and more aggressive."
+    },
+    {
+      "question": "What is the skill system in Dying Light based on?",
+      "options": ["Combat", "Parkour", "Experience", "All of the above"],
+      "correct": "All of the above",
+      "explanation": "Skills are developed through combat, parkour, and general experience."
+    },
+    {
+      "question": "What is a volatility in Dying Light?",
+      "options": ["An explosive", "A powerful zombie", "A safe zone", "A weapon"],
+      "correct": "A powerful zombie",
+      "explanation": "Volatiles are extremely dangerous zombies that are nearly unkillable."
+    },
+    {
+      "question": "What is the main goal in Dying Light 3?",
+      "options": ["Find a vaccine", "Escape the city", "Unknown - game in development", "Save humanity"],
+      "correct": "Unknown - game in development",
+      "explanation": "Dying Light 3 is still in development, so its main story is not yet revealed."
     }
   ]
 }
