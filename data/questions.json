@@ -31,10 +31,10 @@
       "explanation": "Roach is the name of Geralt's horse throughout The Witcher 3."
     },
     {
-      "question": "What is the main threat in The Witcher 3?",
-      "options": ["The Nilfgaardian Empire", "The Wild Hunt", "The Scoia'tael", "The Lodge"],
-      "correct": "The Wild Hunt",
-      "explanation": "The Wild Hunt is an ancient supernatural force that serves as the main antagonist."
+      "question": "Which mysterious man in The Witcher 3 is known as the Man of Glass and offers Geralt dangerous bargains?",
+      "options": ["Dandelion", "Gaunter O'Dimm", "Emhyr var Emreis", "Yarpen Zigrin"],
+      "correct": "Gaunter O'Dimm",
+      "explanation": "Gaunter O'Dimm, also called the Man of Glass or Master Mirror, is a supernatural trickster who makes ominous deals with Geralt (playlist tie-in to Hearts of Stone but first appears in the base game)."
     },
     {
       "question": "How many signs does Geralt have?",
@@ -109,10 +109,10 @@
       "explanation": "Beauclair is the main setting of the Blood and Wine expansion."
     },
     {
-      "question": "What is the main quest about finding in The Witcher 3?",
-      "options": ["A cure for a curse", "Ciri", "The Wild Hunt leader", "Ancient artifacts"],
-      "correct": "Ciri",
-      "explanation": "The main plot revolves around finding and protecting Ciri from the Wild Hunt."
+      "question": "In Hearts of Stone, which once‑noble nobleman bound by a curse does Geralt accompany?",
+      "options": ["Olgierd von Everec", "Eredin", "Radovid V", "Vernon Roche"],
+      "correct": "Olgierd von Everec",
+      "explanation": "Olgierd von Everec is the tormented noble whose soul is tied to the Gaunter O'Dimm’s contract in the Hearts of Stone expansion."
     },
     {
       "question": "What does 'witcher' mean in the game's lore?",
