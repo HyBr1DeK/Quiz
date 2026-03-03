@@ -149,7 +149,7 @@ if current_q_index < len(category_questions):
         # brief sleep to avoid hammering the CPU; the rerun will start a new
         # execution cycle where remaining_time will be recalculated.
         time.sleep(1)
-        st.experimental_rerun()
+        st.rerun()
     
     # Timer and Score Display
     col_timer, col_score = st.columns([1, 1])
