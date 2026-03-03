@@ -135,6 +135,18 @@ progress = (current_q_index + 1) / len(category_questions)
 st.progress(progress)
 st.caption(f"Question {current_q_index + 1} of {len(category_questions)}")
 
+# create placeholders so that any previous feedback/explanation is
+# explicitly cleared each time we render a new question.  using
+# containers prevents stray messages from the prior run from lingering.
+feedback_ph = st.empty()
+explanation_ph = st.empty()
+
+# ensure we have a flag to indicate whether an answer click is currently
+# being handled; this prevents the automatic timer refresh from
+# interrupting while we're waiting to show feedback.
+if 'answer_in_progress' not in st.session_state:
+    st.session_state.answer_in_progress = False
+
 if current_q_index < len(category_questions):
     question_data = category_questions[current_q_index]
     
@@ -199,6 +211,8 @@ if current_q_index < len(category_questions):
     for idx, option in enumerate(question_data['options']):
         with cols[idx % 2]:
             if st.button(option, key=f"answer_{idx}", use_container_width=True):
+                # start processing; stop timer-based reruns
+                st.session_state.answer_in_progress = True
                 selected_answer = option
                 
                 # Check answer and provide feedback
@@ -218,14 +232,21 @@ if current_q_index < len(category_questions):
                 
                 # Show feedback
                 if is_correct:
-                    st.success("✅ Correct!")
+                    feedback_ph.success("✅ Correct!")
                 else:
-                    st.error(f"❌ Incorrect! The correct answer is: **{question_data['correct']}**")
+                    feedback_ph.error(f"❌ Incorrect! The correct answer is: **{question_data['correct']}**")
                 
-                st.info(f"📖 {question_data['explanation']}")
+                explanation_ph.info(f"📖 {question_data['explanation']}")
+                
+                # give user a moment to read
+                time.sleep(2)
+                # clear the placeholders before moving on so the next run
+                # doesn’t inadvertently show them
+                feedback_ph.empty()
+                explanation_ph.empty()
+                st.session_state.answer_in_progress = False
                 
                 # Move to next question
-                time.sleep(2)
                 st.session_state.current_question += 1
                 st.session_state.timer_start = time.time()
                 
@@ -281,11 +302,12 @@ else:
 # At the very end of the question-handling block we schedule an
 # automatic page refresh every second while the timer is still running.
 # Placing it here ensures the question and timer are visible before the
-# rerun occurs.
+# rerun occurs.  We also skip the refresh if an answer is currently being
+# processed; otherwise a background rerun might collide with the 2‑second
+# feedback pause and leave stale messages around.
 if current_q_index < len(category_questions):
-    # only rerun when there is still time remaining; handling of the
-    # timeout case above already performs its own rerun after updating
-    # state, so we don't double‑run.
-    if remaining_time > 0:
+    # only rerun when there is still time remaining and we're not waiting
+    # on feedback from a just‑clicked option.
+    if remaining_time > 0 and not st.session_state.answer_in_progress:
         time.sleep(1)
         st.rerun()
