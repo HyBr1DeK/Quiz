@@ -68,6 +68,12 @@ st.markdown("""
         border-radius: 20px;
         padding: 15px;
         box-shadow: 0 4px 12px rgba(255, 105, 180, 0.15);
+        color: #000 !important;                  /* ensure text is dark */
+    }
+    /* make sure any text inside metrics is legible even on light
+       backgrounds or when Streamlit applies its own coloring */
+    .stMetric * {
+        color: #000 !important;
     }
     
     .stProgress > div > div > div > div {
@@ -103,14 +109,24 @@ if not st.session_state.game_active or st.session_state.selected_category is Non
 # Initialize timer state
 if 'timer_start' not in st.session_state or st.session_state.timer_start is None:
     st.session_state.timer_start = time.time()
-if 'question_index' not in st.session_state:
-    st.session_state.question_index = 0
+# make sure we always have a current question counter (older versions used
+# "question_index" which is now deprecated).  This guards against cases
+# where the user somehow lands on the quiz page without the state having
+# been set by the categories/home page.
+if 'current_question' not in st.session_state:
+    st.session_state.current_question = 0
 
 # Game interface
 st.markdown(f"<h1 style='text-align: center; color: #ff69b4;'>🎀 {st.session_state.selected_category.upper()} 🎀</h1>", unsafe_allow_html=True)
 st.markdown(f"<p style='text-align: center; color: #ff69b4; font-size: 1.1rem;'>👤 Player: <span style='color: #ff1493;'>{st.session_state.player_name}</span> 💕</p>", unsafe_allow_html=True)
 
 questions = load_questions()
+# ensure the selected category exists in the data (user could have
+# manipulated session state or the data file changed)
+if st.session_state.selected_category not in questions:
+    st.error("🚫 The selected category was not found – please go back and
+    choose a different one.")
+    st.stop()
 category_questions = questions[st.session_state.selected_category]
 current_q_index = st.session_state.current_question
 
@@ -141,8 +157,15 @@ if current_q_index < len(category_questions):
     
     st.write("---")
     
-    # Display question
-    st.subheader(f"Q: {question_data['question']}")
+    # Display question (fall back gracefully if the question text is
+    # unexpectedly missing).  It was reported that sometimes the user "did
+    # not see a question" – this guard helps make the problem evident and
+    # avoids rendering an empty header.
+    question_text = question_data.get('question', '').strip()
+    if not question_text:
+        st.warning("⚠️ Question text is missing for this entry. Please review your data file or choose another category.")
+    else:
+        st.subheader(f"Q: {question_text}")
     
     # Check if time is up
     if remaining_time <= 0:
