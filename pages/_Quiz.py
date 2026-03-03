@@ -141,15 +141,10 @@ if current_q_index < len(category_questions):
     # Calculate remaining time
     elapsed = time.time() - st.session_state.timer_start
     remaining_time = max(0, int(30 - elapsed))
-    # refresh the page automatically every second so that the timer
-    # counts down and (importantly) we can detect when it hits zero even
-    # if the user does nothing.  Without this the timer only updates when
-    # the user clicks something, allowing them to bypass the 30s limit.
-    if remaining_time > 0:
-        # brief sleep to avoid hammering the CPU; the rerun will start a new
-        # execution cycle where remaining_time will be recalculated.
-        time.sleep(1)
-        st.rerun()
+    # We intentionally delay rerunning until *after* the UI is rendered
+    # below; the previous placement caused the page to refresh repeatedly
+    # before ever drawing the question or timer, leaving the user staring
+    # at an empty screen until the countdown reached zero.
     
     # Timer and Score Display
     col_timer, col_score = st.columns([1, 1])
@@ -281,4 +276,16 @@ else:
         st.session_state.current_question = 0
         st.session_state.score = 0
         st.session_state.answers = []
+        st.rerun()
+
+# At the very end of the question-handling block we schedule an
+# automatic page refresh every second while the timer is still running.
+# Placing it here ensures the question and timer are visible before the
+# rerun occurs.
+if current_q_index < len(category_questions):
+    # only rerun when there is still time remaining; handling of the
+    # timeout case above already performs its own rerun after updating
+    # state, so we don't double‑run.
+    if remaining_time > 0:
+        time.sleep(1)
         st.rerun()
