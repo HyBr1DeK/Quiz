@@ -124,8 +124,9 @@ questions = load_questions()
 # ensure the selected category exists in the data (user could have
 # manipulated session state or the data file changed)
 if st.session_state.selected_category not in questions:
-    st.error("🚫 The selected category was not found – please go back and
-    choose a different one.")
+    # the error message was split across lines which produced a syntax
+    # error; keep it on one line or use triple quotes
+    st.error("🚫 The selected category was not found – please go back and choose a different one.")
     st.stop()
 category_questions = questions[st.session_state.selected_category]
 current_q_index = st.session_state.current_question
