@@ -156,7 +156,7 @@ with col_title2:
 st.markdown("<hr style='border-color: #ffb6d9; opacity: 0.5;'>", unsafe_allow_html=True)
 
 # Hello Kitty Images Section
-st.markdown("<h3 style='text-align: center; color: #ff69b4; margin: 1.5rem 0;'>🎀 Welcome to Your Cute Quiz Adventure! 🎀</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; color: #ff69b4; margin: 1.5rem 0;'>🎀 Hello piggy says hello 🎀</h3>", unsafe_allow_html=True)
 
 hk_col1, hk_col2, hk_col3 = st.columns([1, 2, 1])
 
