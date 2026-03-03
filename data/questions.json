@@ -119,6 +119,66 @@
       "options": ["Wizard", "Monster hunter", "Warrior", "Noble"],
       "correct": "Monster hunter",
       "explanation": "A witcher is specifically a monster hunter trained with mutations and magic."
+    },
+    {
+      "question": "Which commander of the Blue Stripes is a close ally of Geralt?",
+      "options": ["Vernon Roche", "Cahir", "Dijkstra", "Radovid"],
+      "correct": "Vernon Roche",
+      "explanation": "Vernon Roche leads the Blue Stripes and becomes an ally of Geralt during the game."
+    },
+    {
+      "question": "Which witcher is accused of assassinating King Foltest?",
+      "options": ["Eskel", "Letho of Gulet", "Lambert", "Vesemir"],
+      "correct": "Letho of Gulet",
+      "explanation": "Letho of Gulet is the witcher responsible for killing King Foltest as part of the game's plot."
+    },
+    {
+      "question": "Who is the medic and former love interest of Geralt in Vizima?",
+      "options": ["Keira Metz", "Triss", "Shani", "Philippa"],
+      "correct": "Shani",
+      "explanation": "Shani is a medic encountered in the prologue and older Witcher books; she rekindles a friendship with Geralt."
+    },
+    {
+      "question": "Which dwarf is Geralt's longtime friend and fellow adventurer?",
+      "options": ["Zoltan Chivay", "Yarpen Zigrin", "Dandelion", "Krasznig"],
+      "correct": "Zoltan Chivay",
+      "explanation": "Zoltan Chivay is a dwarf who often accompanies Geralt and provides comic relief."
+    },
+    {
+      "question": "Which witcher from Kaer Morhen has a bad temper and a bandage over one eye?",
+      "options": ["Eskel", "Lambert", "Coën", "Ciri"],
+      "correct": "Lambert",
+      "explanation": "Lambert is known for his fiery temperament and distinctive eye patch."
+    },
+    {
+      "question": "Which witcher at Kaer Morhen is recognized by his scarred face and dry humor?",
+      "options": ["Eskel", "Vesemir", "Geralt", "Emhyr"],
+      "correct": "Eskel",
+      "explanation": "Eskel is one of Geralt's mentors and friends, identifiable by his facial scars."
+    },
+    {
+      "question": "Who is the elderly witcher and mentor figure at Kaer Morhen?",
+      "options": ["Vesemir", "Letho", "Lambert", "Eredin"],
+      "correct": "Vesemir",
+      "explanation": "Vesemir is the oldest living witcher and serves as a father-like mentor to Geralt."
+    },
+    {
+      "question": "Which bard writes songs about Geralt's exploits?",
+      "options": ["Dandelion", "Jaskier", "Olgierd", "Yennefer"],
+      "correct": "Dandelion",
+      "explanation": "Dandelion is Geralt's best friend and a bard who chronicles his adventures in song."
+    },
+    {
+      "question": "Which Nilfgaardian knight turns ally during the hunt for Ciri?",
+      "options": ["Cahir Mawr Dyffryn aep Ceallach", "Emhyr var Emreis", "Roche", "Vernon"],
+      "correct": "Cahir Mawr Dyffryn aep Ceallach",
+      "explanation": "Cahir initially pursues Ciri for Nilfgaard but later becomes an ally and friend."
+    },
+    {
+      "question": "Who is the sorceress with a cloud cat who helps Geralt in Novigrad?",
+      "options": ["Keira Metz", "Francesca", "Philippa", "Yennefer"],
+      "correct": "Keira Metz",
+      "explanation": "Keira Metz is a sorceress who aids Geralt early in the game and owns a cloud cat."
     }
   ],
   "Cyberpunk 2077": [
@@ -241,6 +301,66 @@
       "options": ["The Afterlife", "Lizzie's", "Cloud", "Samurai"],
       "correct": "The Afterlife",
       "explanation": "The Afterlife is a legendary club where corporate agents and mercenaries gather."
+    },
+    {
+      "question": "What is the name of Johnny Silverhand's band?",
+      "options": ["Samurai", "Tetooka", "Archangel", "Chrome"],
+      "correct": "Samurai",
+      "explanation": "Johnny Silverhand was the frontman for the band Samurai."
+    },
+    {
+      "question": "Who hires V to steal the Arasaka chip at the beginning?",
+      "options": ["Dexter DeShawn", "Rogue", "Takemura", "Viktor"],
+      "correct": "Dexter DeShawn",
+      "explanation": "Dexter DeShawn is the fixer who organizes the heist that kicks off the main story."
+    },
+    {
+      "question": "What is the nickname of the detective that helps V investigate Wakako's death?",
+      "options": ["Jason", "River Ward", "Nikki", "Lucy"],
+      "correct": "River Ward",
+      "explanation": "River Ward is a detective who becomes an ally and possible romance option for V."
+    },
+    {
+      "question": "Which gang is known for using electrical weapons and implants?",
+      "options": ["Tyger Claws", "Maelstrom", "Arasaka", "Voodoo Boys"],
+      "correct": "Maelstrom",
+      "explanation": "Maelstrom are a cyberpsycho gang obsessed with cybernetic enhancements and electrical weapons."
+    },
+    {
+      "question": "What is the main operating system used for hacking in the game?",
+      "options": ["NetRunner OS", "Cyberdeck OS", "Eddies", "Quickhack"],
+      "correct": "Quickhack",
+      "explanation": "Quickhacks are programs used in combat and hacking to affect enemies or devices."
+    },
+    {
+      "question": "What is the name of the virtual reality club where the Mox gather?",
+      "options": ["Cloud", "Afterlife", "Petals", "Lizzie's Bar"],
+      "correct": "Lizzie's Bar",
+      "explanation": "Lizzie's Bar is a lesbian club that serves as the headquarters for the Mox."
+    },
+    {
+      "question": "Which character is a legendary netrunner who helps V with the Buddha program?",
+      "options": ["Randy", "Panam Palmer", "NetWatch", "Goro Takemura"],
+      "correct": "Panam Palmer",
+      "explanation": "Panam Palmer is a former member of the Aldecaldos who assists V in various missions."
+    },
+    {
+      "question": "What is the name of the city-wide AI that controls the transit system?",
+      "options": ["Delamain", "DAS", "NetWatch", "V-3"],
+      "correct": "Delamain",
+      "explanation": "Delamain is an AI operating a fleet of autonomous taxis across Night City."
+    },
+    {
+      "question": "What organization is Judy Alvarez part of?",
+      "options": ["Mox", "Voodoo Boys", "Tyger Claws", "Nomads"],
+      "correct": "Mox",
+      "explanation": "Judy Alvarez is a braindance technician and member of the Mox."
+    },
+    {
+      "question": "What drug is associated with cyberpsychosis in Night City?",
+      "options": ["Bounce", "Slab", "Voodoo", "Sushi"],
+      "correct": "Slab",
+      "explanation": "Slab is a drug that can induce cyberpsychosis in users."
     }
   ],
   "Red Dead Redemption 1": [
@@ -363,6 +483,66 @@
       "options": ["I'm an outlaw", "I'm trying", "I ain't no fool", "Nothing is true"],
       "correct": "I'm trying",
       "explanation": "John often says he's 'trying' to be a better man in RDR1."
+    },
+    {
+      "question": "What is the name of John's wife?",
+      "options": ["Abigail Marston", "Mary-Beth", "Susan", "Louise"],
+      "correct": "Abigail Marston",
+      "explanation": "Abigail Marston is John's wife and mother of Jack."
+    },
+    {
+      "question": "What train can John rob early in the game?",
+      "options": ["Southern Cross", "Northern Express", "Transcontinental Limited", "Westward Trail"],
+      "correct": "Southern Cross",
+      "explanation": "The Southern Cross is the train that Marston robs during the mission 'Spines of America.'"
+    },
+    {
+      "question": "Which of these is NOT a location in RDR1?",
+      "options": ["Vespucci Beach", "Armadillo", "Blackwater", "Thieves Landing"],
+      "correct": "Vespucci Beach",
+      "explanation": "Vespucci Beach is from GTA V, not RDR1."
+    },
+    {
+      "question": "What animal is NOT rideable in RDR1?",
+      "options": ["Donkey", "Horse", "Cattle", "Pig"],
+      "correct": "Pig",
+      "explanation": "Pigs cannot be ridden in RDR1, unlike horses and donkeys."
+    },
+    {
+      "question": "Who betrays John by attacking his ranch after the deal?",
+      "options": ["Agent Ross", "Bill Williamson", "Abe Marley", "Dutch van der Linde"],
+      "correct": "Agent Ross",
+      "explanation": "Agent Ross betrays John by leading the government strike on his ranch."
+    },
+    {
+      "question": "What is the primary weapon used by the Mexican revolutionary Agustin Madrazo?",
+      "options": ["Revolver", "Rifle", "Bow", "Knife"],
+      "correct": "Rifle",
+      "explanation": "Madrazo often uses a rifle during missions in Mexico."
+    },
+    {
+      "question": "Which character is forced to work for the government after the game's epilogue?",
+      "options": ["Jack Marston", "John Marston", "Abigail Marston", "Agent Ross"],
+      "correct": "Jack Marston",
+      "explanation": "After the epilogue, Jack takes up his father's oath under government pressure."
+    },
+    {
+      "question": "What is the name of the outlaw who leads the hanging mob in the early game?",
+      "options": ["Spanish Joe", "Jim Milton", "Reverend Swanson", "Archie"],
+      "correct": "Spanish Joe",
+      "explanation": "Spanish Joe leads the lynch mob scene in RDR1."
+    },
+    {
+      "question": "Which item cannot be found in RDR1's inventory?",
+      "options": ["Treasure map", "Canned food", "Modern cellphone", "Gold bar"],
+      "correct": "Modern cellphone",
+      "explanation": "Modern cellphones did not exist in the game's 1911 setting."
+    },
+    {
+      "question": "What profession does John briefly take up at the end of the epilogue?",
+      "options": ["Rancher", "Banker", "Sheriff", "Teacher"],
+      "correct": "Rancher",
+      "explanation": "In the epilogue Jack takes over the family ranch, effectively making John a rancher in spirit."
     }
   ],
   "Red Dead Redemption 2": [
@@ -485,6 +665,66 @@
       "options": ["The Last Stand", "Red Dead Redemption", "Epilogue: The End", "Way of the West"],
       "correct": "Red Dead Redemption",
       "explanation": "Red Dead Redemption is the final mission of the main campaign."
+    },
+    {
+      "question": "Who is Arthur's childhood friend in the gang?",
+      "options": ["Lenny Summers", "Micah Bell", "Hosea Matthews", "Bill Williamson"],
+      "correct": "Lenny Summers",
+      "explanation": "Lenny Summers is one of Arthur's closest friends in the Van der Linde gang."
+    },
+    {
+      "question": "Which region in RDR2 is known for its snowy mountains?",
+      "options": ["Ambarino", "Lemoyne", "New Hanover", "West Elizabeth"],
+      "correct": "Ambarino",
+      "explanation": "Ambarino features cold, mountainous terrain where the story begins."
+    },
+    {
+      "question": "Which gang member is a former slave who seeks revenge?",
+      "options": ["Sadie Adler", "Mary-Beth Gaskill", "Susan Grimshaw", "Bonnie MacFarlane"],
+      "correct": "Sadie Adler",
+      "explanation": "Sadie Adler joins the gang after her husband is killed and becomes a fierce ally."
+    },
+    {
+      "question": "Which town does Arthur ride into to find the gang's next heist target?",
+      "options": ["Blackwater", "Saint Denis", "Valentine", "Armadillo"],
+      "correct": "Blackwater",
+      "explanation": "Blackwater is the town targeted early in the story for a train robbery."
+    },
+    {
+      "question": "Which member of the gang is a skilled conman from Mexico?",
+      "options": ["Javier Escuella", "Charles Smith", "Sean MacGuire", "Jack Marston"],
+      "correct": "Javier Escuella",
+      "explanation": "Javier is the Mexican member known for his conning and fighting skills."
+    },
+    {
+      "question": "What is the name of the hideout used by the gang in Chapter 3?",
+      "options": ["Colter", "Cumberland Forest Camp", "Beaver Hollow", "Shady Belle"],
+      "correct": "Colter",
+      "explanation": "Colter is the snowy camp the gang occupies at the start of RDR2."
+    },
+    {
+      "question": "Which bird species can Arthur hunt and cook?",
+      "options": ["Eagle", "Sparrow", "Crow", "Penguin"],
+      "correct": "Eagle",
+      "explanation": "Eagles are one of the bird species Arthur can hunt."
+    },
+    {
+      "question": "What is the password required to enter the train robbery in Chapter 6?",
+      "options": ["Railway", "Rose", "Dutch", "Arthur"],
+      "correct": "Rose",
+      "explanation": "The password 'Rose' is used during the Saint Denis train job."
+    },
+    {
+      "question": "Which of these is NOT a mechanical weapon upgrade in RDR2?",
+      "options": ["Auto-aim", "Improved range", "Lazer sight", "Extended magazine"],
+      "correct": "Lazer sight",
+      "explanation": "Laser sights are not available as upgrades in RDR2."
+    },
+    {
+      "question": "What is the name of Arthur's mare in the epilogue?",
+      "options": ["Plow Horse", "Rancher", "Lily", "None of the above"],
+      "correct": "Rancher",
+      "explanation": "Arthur names his mare 'Rancher' during the epilogue."
     }
   ],
   "Dying Light 1-3": [
@@ -607,6 +847,66 @@
       "options": ["Find a vaccine", "Escape the city", "Unknown - game in development", "Save humanity"],
       "correct": "Unknown - game in development",
       "explanation": "Dying Light 3 is still in development, so its main story is not yet revealed."
+    },
+    {
+      "question": "Who developed the Dying Light series?",
+      "options": ["Capcom", "Techland", "Ubisoft", "Rockstar"],
+      "correct": "Techland",
+      "explanation": "Techland is the Polish developer behind the Dying Light games."
+    },
+    {
+      "question": "In what year was the original Dying Light released?",
+      "options": ["2013", "2015", "2017", "2019"],
+      "correct": "2015",
+      "explanation": "Dying Light launched in 2015 on PC, PS4, and Xbox One."
+    },
+    {
+      "question": "What resource is used to craft medkits?",
+      "options": ["Scrap Metal", "Herbal Medicine", "Electronics", "Wood"],
+      "correct": "Herbal Medicine",
+      "explanation": "Herbal Medicine is a crafting material used to make medkits."
+    },
+    {
+      "question": "Which skill tree branch focuses on mobility?",
+      "options": ["Power", "Survival", "Agility", "Combat"],
+      "correct": "Agility",
+      "explanation": "The Agility tree improves parkour and movement abilities."
+    },
+    {
+      "question": "What enemy type appears during Blood Moon events?",
+      "options": ["Volatiles", "Bloated", "Runners", "Infected Dogs"],
+      "correct": "Bloated",
+      "explanation": "Bloated zombies are more common during Blood Moon nights."
+    },
+    {
+      "question": "What is the name of the expansion that adds a new rural area?",
+      "options": ["The Following", "Hellraid", "Bad Blood", "Aftermath"],
+      "correct": "The Following",
+      "explanation": "The Following expansion introduces a buggy and a large countryside area."
+    },
+    {
+      "question": "What is the in-game currency called?",
+      "options": ["Eddies", "Gold", "Supplies", "Coins"],
+      "correct": "Supplies",
+      "explanation": "Supplies are used to purchase items and upgrades in Dying Light."
+    },
+    {
+      "question": "What gadget helps spot loot from afar?",
+      "options": ["UV light", "Binoculars", "Radar", "Flashlight"],
+      "correct": "UV light",
+      "explanation": "The UV light highlights loot items on the ground."
+    },
+    {
+      "question": "Which faction controls Old Town?",
+      "options": ["Survivors", "Peacekeepers", "Renegades", "Bandits"],
+      "correct": "Survivors",
+      "explanation": "The Survivors maintain authority over Old Town in the Dying Light 1 setting."
+    },
+    {
+      "question": "What multiplayer mode allows one player to be the infected?",
+      "options": ["Be the Zombie", "Co-op Survival", "Infected Horde", "Night Raid"],
+      "correct": "Be the Zombie",
+      "explanation": "In 'Be the Zombie' one player becomes an infected hunter while others try to survive."
     }
   ]
 }
