@@ -155,6 +155,37 @@ with col_title2:
 
 st.markdown("<hr style='border-color: #ffb6d9; opacity: 0.5;'>", unsafe_allow_html=True)
 
+# Hello Kitty Images Section
+st.markdown("<h3 style='text-align: center; color: #ff69b4; margin: 1.5rem 0;'>🎀 Welcome to Your Cute Quiz Adventure! 🎀</h3>", unsafe_allow_html=True)
+
+hk_col1, hk_col2, hk_col3 = st.columns(3)
+
+# Image 1 - Hello Kitty (Left)
+with hk_col1:
+    try:
+        st.image("https://images.vexels.com/media/users/3/228225/raw/49f07e6fb97f96d54cea9dde2dab9f7d-hello-kitty-character.png", 
+                width=180, caption="🎀 Hello Kitty", use_column_width=False)
+    except:
+        st.markdown("<p style='text-align: center; color: #ff69b4;'>🎀</p>", unsafe_allow_html=True)
+
+# Image 2 - Hello Kitty with bow (Center)
+with hk_col2:
+    try:
+        st.image("https://images.vexels.com/media/users/3/228309/raw/4de9b28be7b2e9787c945f56919d42de-hello-kitty-cute-face.png", 
+                width=180, caption="💖 Cute Face", use_column_width=False)
+    except:
+        st.markdown("<p style='text-align: center; color: #ff69b4;'>💖</p>", unsafe_allow_html=True)
+
+# Image 3 - Hello Kitty sitting (Right)
+with hk_col3:
+    try:
+        st.image("https://images.vexels.com/media/users/3/224909/raw/8c86ddf18e15c35d59ad98f56f11f1ab-hello-kitty-standing-character.png", 
+                width=180, caption="🌸 Sitting Pretty", use_column_width=False)
+    except:
+        st.markdown("<p style='text-align: center; color: #ff69b4;'>🌸</p>", unsafe_allow_html=True)
+
+st.markdown("<br>", unsafe_allow_html=True)
+
 col1, col2 = st.columns([2.5, 1.2])
 
 with col1:
