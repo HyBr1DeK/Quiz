@@ -4,66 +4,64 @@ import pandas as pd
 
 st.set_page_config(page_title="Categories", layout="wide")
 
-# Custom CSS styling
+# Custom CSS styling - Hello Kitty
 st.markdown("""
     <style>
-    :root {
-        --primary: #00d4ff;
-        --secondary: #ff006e;
-        --dark-bg: #0a0e27;
-        --card-bg: #1a1f3a;
-        --text-light: #e0e7ff;
-    }
-    
     .main {
-        background: linear-gradient(135deg, #0a0e27 0%, #1a0f35 100%);
-        color: #e0e7ff;
+        background: linear-gradient(135deg, #fffaf0 0%, #fff5e6 50%, #ffe6f0 100%);
+        color: #d946a6;
     }
     
     h1 {
-        background: linear-gradient(90deg, #00d4ff, #ff006e);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+        color: #ff69b4;
         font-weight: 900;
         font-size: 3rem !important;
-        margin-bottom: 0.5rem;
+        text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.2);
     }
     
     h2, h3 {
-        color: #00d4ff;
-        text-transform: uppercase;
-        letter-spacing: 1px;
+        color: #ff69b4;
         font-weight: 700;
     }
     
     .stButton>button {
-        background: linear-gradient(135deg, #1a1f3a 0%, #2a2555 100%) !important;
-        border: 2px solid #00d4ff !important;
-        color: #e0e7ff !important;
-        font-weight: 600;
-        border-radius: 12px !important;
+        background: linear-gradient(135deg, #ffffff 0%, #fff0f5 100%) !important;
+        border: 2px solid #ffb6d9 !important;
+        color: #ff69b4 !important;
+        border-radius: 20px !important;
         transition: all 0.3s ease;
-        box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+        box-shadow: 0 4px 12px rgba(255, 105, 180, 0.15);
     }
     
     .stButton>button:hover {
-        background: linear-gradient(135deg, #00d4ff15 0%, #ff006e15 100%) !important;
-        border-color: #ff006e !important;
-        box-shadow: 0 0 30px rgba(255, 0, 110, 0.5) !important;
+        background: linear-gradient(135deg, #ffc0cb 0%, #ffb6d9 100%) !important;
+        border-color: #ff69b4 !important;
+        box-shadow: 0 6px 18px rgba(255, 105, 180, 0.3) !important;
     }
     
-    .metric-card {
-        background: linear-gradient(135deg, #1a1f3a 0%, #2a2555 100%);
-        border: 1px solid #00d4ff;
-        border-radius: 12px;
+    .stMetric {
+        background: linear-gradient(135deg, #fff0f5 0%, #ffffff 100%);
+        border: 2px solid #ffb6d9;
+        border-radius: 20px;
         padding: 20px;
-        box-shadow: 0 0 15px rgba(0, 212, 255, 0.15);
+        box-shadow: 0 4px 12px rgba(255, 105, 180, 0.15);
+    }
+
+    .stDataFrame {
+        background: rgba(255, 255, 255, 0.8) !important;
+        border: 2px solid #ffb6d9 !important;
+        border-radius: 15px !important;
+    }
+
+    .stExpander {
+        border: 2px solid #ffb6d9 !important;
+        border-radius: 15px !important;
+        background: linear-gradient(135deg, #fff0f5 0%, #ffffff 100%);
     }
     </style>
     """, unsafe_allow_html=True)
 
-st.markdown("<h1 style='text-align: center;'>📚 CATEGORIES OVERVIEW</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>🎀 CATEGORIES OVERVIEW 🎀</h1>", unsafe_allow_html=True)
 
 def load_questions():
     with open('data/questions.json', 'r') as f:

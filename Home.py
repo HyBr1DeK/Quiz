@@ -6,16 +6,19 @@ from datetime import datetime
 # Set page config
 st.set_page_config(page_title="QuizMaster", layout="wide", initial_sidebar_state="expanded")
 
-# Custom CSS for modern gaming design
+# Custom CSS for Hello Kitty design
 st.markdown("""
     <style>
-    /* Main theme colors */
+    /* Hello Kitty Color Palette */
     :root {
-        --primary: #00d4ff;
-        --secondary: #ff006e;
-        --dark-bg: #0a0e27;
-        --card-bg: #1a1f3a;
-        --text-light: #e0e7ff;
+        --pink: #ff69b4;
+        --light-pink: #ffc0cb;
+        --pastel-pink: #ffb6d9;
+        --purple: #e6b3ff;
+        --light-purple: #f0e6ff;
+        --light-blue: #b3e5fc;
+        --white: #fffaf0;
+        --accent: #ff1493;
     }
     
     /* Hide default Streamlit elements */
@@ -24,89 +27,104 @@ st.markdown("""
     
     /* Main container */
     .main {
-        background: linear-gradient(135deg, #0a0e27 0%, #1a0f35 100%);
-        color: #e0e7ff;
+        background: linear-gradient(135deg, #fffaf0 0%, #fff5e6 50%, #ffe6f0 100%);
+        color: #d946a6;
     }
     
-    /* Title styling */
+    /* Title styling - Hello Kitty style */
     h1 {
-        background: linear-gradient(90deg, #00d4ff, #ff006e);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+        color: #ff69b4;
         font-weight: 900;
         font-size: 3.5rem !important;
-        text-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+        text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.2);
         margin-bottom: 0.5rem;
+        font-family: 'Arial', sans-serif;
     }
     
     /* Subheadings */
     h2, h3 {
-        color: #00d4ff;
-        text-transform: uppercase;
-        letter-spacing: 2px;
+        color: #ff69b4;
         font-weight: 700;
+        font-family: 'Arial', sans-serif;
     }
     
     /* Category button styling */
     .category-btn {
-        background: linear-gradient(135deg, #1a1f3a 0%, #2a2555 100%) !important;
-        border: 2px solid #00d4ff !important;
-        color: #e0e7ff !important;
+        background: linear-gradient(135deg, #ffffff 0%, #fff0f5 100%) !important;
+        border: 3px solid #ffb6d9 !important;
+        color: #d946a6 !important;
         padding: 20px !important;
-        border-radius: 15px !important;
+        border-radius: 25px !important;
         font-weight: 600;
         font-size: 1.1rem;
         transition: all 0.3s ease;
-        box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+        box-shadow: 0 5px 15px rgba(255, 105, 180, 0.2);
     }
     
     .category-btn:hover {
-        background: linear-gradient(135deg, #00d4ff15 0%, #ff006e15 100%) !important;
-        border-color: #ff006e !important;
-        box-shadow: 0 0 30px rgba(255, 0, 110, 0.5) !important;
-        transform: translateY(-2px);
-    }
-    
-    /* Stat cards */
-    .metric-card {
-        background: linear-gradient(135deg, #1a1f3a 0%, #2a2555 100%);
-        border: 1px solid #00d4ff;
-        border-radius: 12px;
-        padding: 20px;
-        box-shadow: 0 0 15px rgba(0, 212, 255, 0.15);
+        background: linear-gradient(135deg, #ffc0cb 0%, #ffb6d9 100%) !important;
+        border-color: #ff69b4 !important;
+        box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4) !important;
+        transform: translateY(-3px);
     }
     
     /* Input styling */
     input[type="text"] {
-        background-color: #1a1f3a !important;
-        border: 2px solid #00d4ff !important;
-        color: #e0e7ff !important;
-        border-radius: 10px !important;
-        padding: 12px !important;
+        background-color: #ffffff !important;
+        border: 2px solid #ffb6d9 !important;
+        color: #d946a6 !important;
+        border-radius: 20px !important;
+        padding: 12px 15px !important;
+        font-family: 'Arial', sans-serif;
     }
     
     input[type="text"]:focus {
-        border-color: #ff006e !important;
-        box-shadow: 0 0 10px rgba(255, 0, 110, 0.3) !important;
+        border-color: #ff69b4 !important;
+        box-shadow: 0 0 15px rgba(255, 105, 180, 0.3) !important;
     }
     
     /* General text */
     p {
-        color: #e0e7ff;
+        color: #d946a6;
+        font-family: 'Arial', sans-serif;
     }
     
     /* Divider */
     hr {
-        border-color: #00d4ff;
-        opacity: 0.3;
+        border-color: #ffb6d9;
+        opacity: 0.5;
     }
     
     /* Info box */
     .stInfo {
-        background: rgba(0, 212, 255, 0.1) !important;
-        border: 1px solid #00d4ff !important;
-        border-radius: 10px !important;
+        background: rgba(255, 192, 203, 0.3) !important;
+        border: 2px solid #ffb6d9 !important;
+        border-radius: 20px !important;
+    }
+    
+    /* Button styling */
+    .stButton>button {
+        background: linear-gradient(135deg, #ffffff 0%, #fff0f5 100%) !important;
+        border: 2px solid #ffb6d9 !important;
+        color: #ff69b4 !important;
+        border-radius: 20px !important;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 12px rgba(255, 105, 180, 0.15);
+    }
+    
+    .stButton>button:hover {
+        background: linear-gradient(135deg, #ffc0cb 0%, #ffb6d9 100%) !important;
+        border-color: #ff69b4 !important;
+        box-shadow: 0 6px 18px rgba(255, 105, 180, 0.3) !important;
+    }
+    
+    /* Metric box */
+    .stMetric {
+        background: linear-gradient(135deg, #fff0f5 0%, #ffffff 100%);
+        border: 2px solid #ffb6d9;
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(255, 105, 180, 0.15);
     }
     </style>
     """, unsafe_allow_html=True)
@@ -126,31 +144,31 @@ def load_questions():
     with open('data/questions.json', 'r') as f:
         return json.load(f)
 
-# Header with custom design
+# Header with Hello Kitty design
 col_title1, col_title2 = st.columns([3, 1])
 with col_title1:
-    st.title("🎮 QUIZMASTER")
-    st.write("<p style='font-size: 1.2rem; color: #00d4ff;'>Master Your Knowledge. Conquer Each Challenge.</p>", unsafe_allow_html=True)
+    st.title("🎀 QUIZMASTER 🎀")
+    st.write("<p style='font-size: 1.2rem; color: #ff69b4;'>✨ Master Your Knowledge with Cuteness! ✨</p>", unsafe_allow_html=True)
 
 with col_title2:
     st.empty()
 
-st.markdown("<hr style='border-color: #00d4ff; opacity: 0.3;'>", unsafe_allow_html=True)
+st.markdown("<hr style='border-color: #ffb6d9; opacity: 0.5;'>", unsafe_allow_html=True)
 
 col1, col2 = st.columns([2.5, 1.2])
 
 with col1:
-    st.markdown("<h2 style='color: #00d4ff;'>⚡ Get Started</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='color: #ff69b4;'>💖 Get Started</h2>", unsafe_allow_html=True)
     
     # Player name input
-    player_name = st.text_input("👤 Enter your name:", value=st.session_state.player_name, key="player_input", placeholder="Enter your gamer tag...")
+    player_name = st.text_input("👤 Enter your name:", value=st.session_state.player_name, key="player_input", placeholder="Your cute name here 💕")
     if player_name:
         st.session_state.player_name = player_name
     
     st.markdown("<br>", unsafe_allow_html=True)
     
     # Category selection
-    st.markdown("<h3 style='color: #ff006e; margin-top: 2rem;'>🎯 Choose Your Battle</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color: #ff69b4;'>🎮 Choose Your Challenge</h3>", unsafe_allow_html=True)
     questions = load_questions()
     categories = list(questions.keys())
     
@@ -176,29 +194,29 @@ with col1:
                 st.session_state.timer_start = None
                 st.switch_page("pages/_Quiz.py")
         with col_cat2:
-            st.markdown(f"<div style='text-align: center; padding: 8px; background: rgba(0, 212, 255, 0.1); border-radius: 8px; border: 1px solid #00d4ff;'><span style='color: #00d4ff; font-weight: bold;'>{len(questions[category])}</span></div>", unsafe_allow_html=True)
+            st.markdown(f"<div style='text-align: center; padding: 8px; background: linear-gradient(135deg, #ffc0cb 0%, #ffb6d9 100%); border-radius: 15px; border: 2px solid #ffb6d9;'><span style='color: #ff69b4; font-weight: bold;'>{len(questions[category])}</span></div>", unsafe_allow_html=True)
 
 with col2:
-    st.markdown("<h2 style='color: #00d4ff; text-align: center;'>📊 STATS</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='color: #ff69b4; text-align: center;'>💕 STATS</h2>", unsafe_allow_html=True)
     
-    st.markdown("<div style='background: rgba(0, 212, 255, 0.1); border: 1px solid #00d4ff; border-radius: 12px; padding: 20px; text-align: center;'>", unsafe_allow_html=True)
-    st.markdown(f"<h3 style='color: #ff006e; margin: 0;'>{st.session_state.score}</h3>", unsafe_allow_html=True)
-    st.markdown("<p style='color: #00d4ff; margin: 5px 0 0 0; font-size: 0.9rem;'>YOUR SCORE</p>", unsafe_allow_html=True)
+    st.markdown("<div style='background: linear-gradient(135deg, #fff0f5 0%, #ffffff 100%); border: 2px solid #ffb6d9; border-radius: 20px; padding: 20px; text-align: center; box-shadow: 0 4px 12px rgba(255, 105, 180, 0.15);'>", unsafe_allow_html=True)
+    st.markdown(f"<h3 style='color: #ff69b4; margin: 0;'>💎 {st.session_state.score}</h3>", unsafe_allow_html=True)
+    st.markdown("<p style='color: #ff69b4; margin: 5px 0 0 0; font-size: 0.9rem;'>YOUR SCORE</p>", unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
     
     st.markdown("<br>", unsafe_allow_html=True)
     
-    st.markdown("<div style='background: rgba(255, 0, 110, 0.1); border: 1px solid #ff006e; border-radius: 12px; padding: 20px; text-align: center;'>", unsafe_allow_html=True)
-    st.markdown(f"<h3 style='color: #00d4ff; margin: 0;'>{sum(len(q) for q in questions.values())}</h3>", unsafe_allow_html=True)
-    st.markdown("<p style='color: #ff006e; margin: 5px 0 0 0; font-size: 0.9rem;'>TOTAL QUESTIONS</p>", unsafe_allow_html=True)
+    st.markdown("<div style='background: linear-gradient(135deg, #ffe6f0 0%, #fff0f5 100%); border: 2px solid #ffb6d9; border-radius: 20px; padding: 20px; text-align: center; box-shadow: 0 4px 12px rgba(255, 105, 180, 0.15);'>", unsafe_allow_html=True)
+    st.markdown(f"<h3 style='color: #ff69b4; margin: 0;'>🎯 {sum(len(q) for q in questions.values())}</h3>", unsafe_allow_html=True)
+    st.markdown("<p style='color: #ff69b4; margin: 5px 0 0 0; font-size: 0.9rem;'>QUESTIONS</p>", unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
     
     st.markdown("<br>", unsafe_allow_html=True)
     
-    st.markdown("<div style='background: rgba(0, 212, 255, 0.1); border: 1px solid #00d4ff; border-radius: 12px; padding: 15px; text-align: center;'>", unsafe_allow_html=True)
-    st.markdown("<p style='color: #00d4ff; margin: 0; font-size: 0.85rem;'>⭐ +10 points per correct answer</p>", unsafe_allow_html=True)
+    st.markdown("<div style='background: linear-gradient(135deg, #ffcceb 0%, #fff0f5 100%); border: 2px solid #ffb6d9; border-radius: 20px; padding: 15px; text-align: center; box-shadow: 0 4px 12px rgba(255, 105, 180, 0.15);'>", unsafe_allow_html=True)
+    st.markdown("<p style='color: #ff69b4; margin: 0; font-size: 0.85rem;'>💖 +10 points per correct answer</p>", unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 # Footer
-st.markdown("<hr style='border-color: #00d4ff; opacity: 0.3; margin-top: 3rem;'>", unsafe_allow_html=True)
-st.markdown("<p style='text-align: center; color: #00d4ff; font-size: 0.9rem;'>← Navigate using the sidebar for Categories, Highscores, and Quiz info</p>", unsafe_allow_html=True)
+st.markdown("<hr style='border-color: #ffb6d9; opacity: 0.5; margin-top: 3rem;'>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; color: #ff69b4; font-size: 0.9rem;'>← Navigate using the sidebar for Categories, Highscores, and more! 🎀</p>", unsafe_allow_html=True)

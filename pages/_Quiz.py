@@ -5,76 +5,79 @@ from datetime import datetime
 
 st.set_page_config(page_title="Quiz Game", layout="wide")
 
-# Custom CSS for quiz page
+# Custom CSS for quiz page - Hello Kitty
 st.markdown("""
     <style>
     .main {
-        background: linear-gradient(135deg, #0a0e27 0%, #1a0f35 100%);
-        color: #e0e7ff;
+        background: linear-gradient(135deg, #fffaf0 0%, #fff5e6 50%, #ffe6f0 100%);
+        color: #d946a6;
     }
     
     h1 {
-        background: linear-gradient(90deg, #00d4ff, #ff006e);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+        color: #ff69b4;
         font-weight: 900;
+        text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.2);
     }
     
     h2 {
-        color: #ff006e;
-        text-transform: uppercase;
-        letter-spacing: 1px;
+        color: #ff69b4;
+        font-weight: 700;
         margin-top: 1.5rem;
     }
     
     .stButton>button {
-        background: linear-gradient(135deg, #1a3a52 0%, #2a1f55 100%) !important;
-        border: 2px solid #00d4ff !important;
-        color: #e0e7ff !important;
+        background: linear-gradient(135deg, #ffffff 0%, #fff0f5 100%) !important;
+        border: 2px solid #ffb6d9 !important;
+        color: #ff69b4 !important;
         font-weight: 600;
-        border-radius: 12px !important;
+        border-radius: 20px !important;
         padding: 20px !important;
         font-size: 1.1rem !important;
         transition: all 0.3s ease;
-        box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+        box-shadow: 0 4px 12px rgba(255, 105, 180, 0.15);
     }
     
     .stButton>button:hover {
-        background: linear-gradient(135deg, #00d4ff20 0%, #ff006e20 100%) !important;
-        border-color: #ff006e !important;
-        box-shadow: 0 0 30px rgba(255, 0, 110, 0.6) !important;
+        background: linear-gradient(135deg, #ffc0cb 0%, #ffb6d9 100%) !important;
+        border-color: #ff69b4 !important;
+        box-shadow: 0 8px 20px rgba(255, 105, 180, 0.3) !important;
         transform: translateY(-3px);
     }
     
     .stSuccess {
-        background: rgba(0, 200, 100, 0.15) !important;
-        border: 1px solid #00c864 !important;
-        border-radius: 10px !important;
+        background: rgba(192, 255, 192, 0.2) !important;
+        border: 2px solid #90ee90 !important;
+        border-radius: 15px !important;
     }
     
     .stError {
-        background: rgba(255, 0, 110, 0.15) !important;
-        border: 1px solid #ff006e !important;
-        border-radius: 10px !important;
+        background: rgba(255, 192, 203, 0.2) !important;
+        border: 2px solid #ffb6d9 !important;
+        border-radius: 15px !important;
     }
     
     .stInfo {
-        background: rgba(0, 212, 255, 0.1) !important;
-        border: 1px solid #00d4ff !important;
-        border-radius: 10px !important;
+        background: rgba(255, 192, 203, 0.15) !important;
+        border: 2px solid #ffb6d9 !important;
+        border-radius: 15px !important;
     }
     
     .stMetric {
-        background: linear-gradient(135deg, #1a1f3a 0%, #2a2555 100%);
-        border: 1px solid #00d4ff;
-        border-radius: 12px;
+        background: linear-gradient(135deg, #fff0f5 0%, #ffffff 100%);
+        border: 2px solid #ffb6d9;
+        border-radius: 20px;
         padding: 15px;
-        box-shadow: 0 0 15px rgba(0, 212, 255, 0.15);
+        box-shadow: 0 4px 12px rgba(255, 105, 180, 0.15);
     }
     
     .stProgress > div > div > div > div {
-        background: linear-gradient(90deg, #00d4ff, #ff006e) !important;
+        background: linear-gradient(90deg, #ff69b4, #ffc0cb) !important;
+    }
+    
+    .stWarning {
+        background: rgba(255, 192, 203, 0.2) !important;
+        border: 2px solid #ffb6d9 !important;
+        border-radius: 15px !important;
     }
     </style>
     """, unsafe_allow_html=True)
@@ -104,8 +107,8 @@ if 'question_index' not in st.session_state:
     st.session_state.question_index = 0
 
 # Game interface
-st.markdown(f"<h1 style='text-align: center;'>🎮 {st.session_state.selected_category.upper()}</h1>", unsafe_allow_html=True)
-st.markdown(f"<p style='text-align: center; color: #00d4ff; font-size: 1.1rem;'>👤 Player: <span style='color: #ff006e;'>{st.session_state.player_name}</span></p>", unsafe_allow_html=True)
+st.markdown(f"<h1 style='text-align: center; color: #ff69b4;'>🎀 {st.session_state.selected_category.upper()} 🎀</h1>", unsafe_allow_html=True)
+st.markdown(f"<p style='text-align: center; color: #ff69b4; font-size: 1.1rem;'>👤 Player: <span style='color: #ff1493;'>{st.session_state.player_name}</span> 💕</p>", unsafe_allow_html=True)
 
 questions = load_questions()
 category_questions = questions[st.session_state.selected_category]

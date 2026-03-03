@@ -4,44 +4,47 @@ import pandas as pd
 
 st.set_page_config(page_title="Highscores", layout="wide")
 
-# Custom CSS styling
+# Custom CSS styling - Hello Kitty
 st.markdown("""
     <style>
     .main {
-        background: linear-gradient(135deg, #0a0e27 0%, #1a0f35 100%);
-        color: #e0e7ff;
+        background: linear-gradient(135deg, #fffaf0 0%, #fff5e6 50%, #ffe6f0 100%);
+        color: #d946a6;
     }
     
     h1 {
-        background: linear-gradient(90deg, #00d4ff, #ff006e);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+        color: #ff69b4;
         font-weight: 900;
         font-size: 3rem !important;
+        text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.2);
     }
     
     h2, h3 {
-        color: #00d4ff;
-        text-transform: uppercase;
-        letter-spacing: 1px;
+        color: #ff69b4;
+        font-weight: 700;
     }
     
     .stDataFrame {
-        background: rgba(26, 31, 58, 0.5);
-        border: 1px solid #00d4ff;
-        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.9) !important;
+        border: 2px solid #ffb6d9 !important;
+        border-radius: 15px !important;
     }
     
     .stInfo {
-        background: rgba(0, 212, 255, 0.1) !important;
-        border: 1px solid #00d4ff !important;
-        border-radius: 10px !important;
+        background: rgba(255, 192, 203, 0.2) !important;
+        border: 2px solid #ffb6d9 !important;
+        border-radius: 15px !important;
+    }
+    
+    .stExpander {
+        border: 2px solid #ffb6d9 !important;
+        border-radius: 15px !important;
+        background: linear-gradient(135deg, #fff0f5 0%, #ffffff 100%);
     }
     </style>
     """, unsafe_allow_html=True)
 
-st.markdown("<h1 style='text-align: center;'>🏆 LEADERBOARD</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>🏆 LEADERBOARD 🎀</h1>", unsafe_allow_html=True)
 
 def load_highscores():
     with open('data/highscores.json', 'r') as f:
