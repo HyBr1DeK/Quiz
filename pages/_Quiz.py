@@ -113,8 +113,37 @@ def save_highscores(scores):
         json.dump(scores, f, indent=2)
 
 # Check if game is active
-if not st.session_state.game_active or st.session_state.selected_category is None:
-    st.warning("Please select a category from the home page to start playing!")
+if (not st.session_state.get('game_active', False)) or (st.session_state.get('selected_category') is None):
+    questions = load_questions()
+    total_questions = sum(len(q) for q in questions.values())
+    total_categories = len(questions)
+
+    st.markdown("<h1 style='text-align: center; color: #ff69b4;'>🎮 QUIZ INFORMATION 🎀</h1>", unsafe_allow_html=True)
+    st.info("Choose a category on Home or Categories, then return to this tab to play.")
+
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.metric("Total Categories", total_categories)
+    with col2:
+        st.metric("Total Questions", total_questions)
+    with col3:
+        st.metric("Points per Correct Answer", "10")
+
+    st.write("---")
+    st.subheader("How Quiz Mode Works")
+    st.markdown("- Each question has a 30-second timer.")
+    st.markdown("- If time runs out, the answer is marked wrong and gives 0 points.")
+    st.markdown("- One answer per question. Only your selected answer is highlighted.")
+    st.markdown("- Final score is saved automatically to Highscores.")
+
+    st.write("---")
+    st.subheader("Available Quiz Categories")
+    detail_cols = st.columns(2)
+    for idx, (category, q_list) in enumerate(questions.items()):
+        with detail_cols[idx % 2]:
+            st.markdown(f"**📚 {category}**")
+            st.caption(f"Questions: {len(q_list)} | Max Score: {len(q_list) * 10}")
+
     st.stop()
 
 # Initialize timer state
