@@ -249,10 +249,15 @@ if current_q_index < len(category_questions):
     selected_answer = st.radio(
         "Pick one answer:",
         question_data['options'],
-        key=f"answer_choice_{current_q_index}"
+        key=f"answer_choice_{current_q_index}",
+        index=None
     )
 
     if st.button("Submit Answer", key=f"submit_answer_{current_q_index}", use_container_width=True):
+        if selected_answer is None:
+            st.warning("Please select an answer first.")
+            st.stop()
+
         # start processing; stop timer-based reruns
         st.session_state.answer_in_progress = True
 
