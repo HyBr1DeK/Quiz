@@ -244,55 +244,57 @@ if current_q_index < len(category_questions):
         
         st.rerun()
     
-    # Display options as buttons
-    selected_answer = None
-    cols = st.columns(2)
-    for idx, option in enumerate(question_data['options']):
-        with cols[idx % 2]:
-            if st.button(option, key=f"answer_{current_q_index}_{idx}", use_container_width=True):
-                # start processing; stop timer-based reruns
-                st.session_state.answer_in_progress = True
-                selected_answer = option
-                
-                # Check answer and provide feedback
-                is_correct = selected_answer == question_data['correct']
-                
-                # Store answer
-                st.session_state.answers.append({
-                    'question': question_data['question'],
-                    'user_answer': selected_answer,
-                    'correct_answer': question_data['correct'],
-                    'is_correct': is_correct
-                })
-                
-                # Update score
-                if is_correct:
-                    st.session_state.score += 10
-                
-                # Show feedback
-                if is_correct:
-                    feedback_ph.success("✅ Correct!")
-                else:
-                    feedback_ph.error(f"❌ Incorrect! The correct answer is: **{question_data['correct']}**")
-                
-                explanation_ph.info(f"📖 {question_data['explanation']}")
-                
-                # give user a moment to read; extended per request
-                time.sleep(5)
-                # clear the placeholders before moving on so the next run
-                # doesn’t inadvertently show them
-                feedback_ph.empty()
-                explanation_ph.empty()
-                st.session_state.answer_in_progress = False
-                
-                # Move to next question
-                st.session_state.current_question += 1
-                st.session_state.timer_start = time.time()
-                
-                if st.session_state.current_question >= len(category_questions):
-                    st.session_state.game_active = False
-                
-                st.rerun()
+    # Use a single-choice selector to guarantee that only one answer can
+    # be highlighted/selected at any time.
+    selected_answer = st.radio(
+        "Pick one answer:",
+        question_data['options'],
+        key=f"answer_choice_{current_q_index}"
+    )
+
+    if st.button("Submit Answer", key=f"submit_answer_{current_q_index}", use_container_width=True):
+        # start processing; stop timer-based reruns
+        st.session_state.answer_in_progress = True
+
+        # Check answer and provide feedback
+        is_correct = selected_answer == question_data['correct']
+
+        # Store answer
+        st.session_state.answers.append({
+            'question': question_data['question'],
+            'user_answer': selected_answer,
+            'correct_answer': question_data['correct'],
+            'is_correct': is_correct
+        })
+
+        # Update score
+        if is_correct:
+            st.session_state.score += 10
+
+        # Show feedback
+        if is_correct:
+            feedback_ph.success("✅ Correct!")
+        else:
+            feedback_ph.error(f"❌ Incorrect! The correct answer is: **{question_data['correct']}**")
+
+        explanation_ph.info(f"📖 {question_data['explanation']}")
+
+        # give user a moment to read; extended per request
+        time.sleep(5)
+        # clear the placeholders before moving on so the next run
+        # doesn’t inadvertently show them
+        feedback_ph.empty()
+        explanation_ph.empty()
+        st.session_state.answer_in_progress = False
+
+        # Move to next question
+        st.session_state.current_question += 1
+        st.session_state.timer_start = time.time()
+
+        if st.session_state.current_question >= len(category_questions):
+            st.session_state.game_active = False
+
+        st.rerun()
 
 else:
     # Quiz finished
