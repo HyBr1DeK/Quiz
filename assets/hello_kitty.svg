@@ -23,8 +23,8 @@
   <ellipse cx="100" cy="114" rx="6" ry="8" fill="#FFD700" stroke="black" stroke-width="2"/>
   
   <!-- Mouth -->
-  <path d="M 100 110 Q 95 125 85 125" stroke="black" stroke-width="2" fill="none" stroke-linecap="round"/>
-  <path d="M 100 110 Q 105 125 115 125" stroke="black" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 100 114 Q 95 129 85 129" stroke="black" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 100 114 Q 105 129 115 129" stroke="black" stroke-width="2" fill="none" stroke-linecap="round"/>
   
   <!-- Left whiskers -->
   <line x1="50" y1="105" x2="20" y2="100" stroke="black" stroke-width="2" stroke-linecap="round"/>
