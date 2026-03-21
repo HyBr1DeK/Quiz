@@ -214,7 +214,7 @@ with col1:
                 st.session_state.answers = []
                 st.session_state.score = 0
                 st.session_state.timer_start = None
-                st.switch_page("pages/_Quiz.py")
+                st.switch_page("pages/03_Quiz.py")
         with col_cat2:
             st.markdown(f"<div style='text-align: center; padding: 8px; background: linear-gradient(135deg, #ffc0cb 0%, #ffb6d9 100%); border-radius: 15px; border: 2px solid #ffb6d9;'><span style='color: #ff69b4; font-weight: bold;'>{len(questions[category])}</span></div>", unsafe_allow_html=True)
 

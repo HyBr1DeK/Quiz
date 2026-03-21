@@ -101,7 +101,7 @@ for idx, (category, q_list) in enumerate(questions.items()):
             # navigate to quiz page; must match what Home.py does so the
             # proper script runs.
             try:
-                st.switch_page("pages/_Quiz.py")
+                st.switch_page("pages/03_Quiz.py")
             except Exception:
                 # older Streamlit versions may not support switch_page,
                 # fallback to rerun which keeps the user on the same page –
