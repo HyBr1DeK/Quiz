@@ -62,28 +62,40 @@ st.markdown("<h1>🗓️ UPCOMING QUIZZES 🎀</h1>", unsafe_allow_html=True)
 left, right = st.columns([1.4, 1], gap="large")
 
 with left:
+    st.markdown("<div class='upcoming-card'>", unsafe_allow_html=True)
+
     st.markdown(
         """
-        <div class="upcoming-card">
-            <div class="quiz-item">
-                🎮 The Witcher 3: Adding the new DLC<br>
-                <span class="subtext">Release date: Unknown</span>
-            </div>
-
-            <div class="quiz-item">
-                ⚔️ The Witcher 4<br>
-                <span class="subtext">Release date: Also unknown</span>
-            </div>
-
-            <div class="quiz-item">
-                🧟 Resident Evil Requiem<br>
-                <span class="subtext">Now raising funds to actually buy the game - it is 70 EUR.</span><br>
-                <span class="subtext">You can find payment details in the <span class="pink">Donations</span> tab.</span>
-            </div>
+        <div class="quiz-item">
+            🎮 The Witcher 3: Adding the new DLC<br>
+            <span class="subtext">Release date: Unknown</span>
         </div>
         """,
         unsafe_allow_html=True,
     )
+
+    st.markdown(
+        """
+        <div class="quiz-item">
+            ⚔️ The Witcher 4<br>
+            <span class="subtext">Release date: Also unknown</span>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    st.markdown(
+        """
+        <div class="quiz-item">
+            🧟 Resident Evil Requiem<br>
+            <span class="subtext">Now raising funds to actually buy the game - it is 70 EUR.</span><br>
+            <span class="subtext">You can find payment details in the <span class="pink">Donations</span> tab.</span>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    st.markdown("</div>", unsafe_allow_html=True)
 
 with right:
     try:
