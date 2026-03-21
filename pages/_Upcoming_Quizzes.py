@@ -34,19 +34,23 @@ st.markdown("""
         border-radius: 18px;
         padding: 14px 16px;
         margin-bottom: 12px;
-        color: #ff4fa8;
-        font-weight: 700;
-        line-height: 1.6;
+        color: #ff2f95;
+        font-weight: 900;
+        font-size: 1.9rem;
+        line-height: 1.45;
+        letter-spacing: 0.2px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
     }
 
     .subtext {
-        color: #ffc8e7;
-        font-weight: 500;
+        color: #ff6db6;
+        font-weight: 700;
+        font-size: 1.05rem;
     }
 
     .pink {
-        color: #ff69b4;
-        font-weight: 800;
+        color: #ff2f95;
+        font-weight: 900;
     }
 
     .tip {
