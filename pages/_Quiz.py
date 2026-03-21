@@ -119,8 +119,6 @@ if (not st.session_state.get('game_active', False)) or (st.session_state.get('se
     total_categories = len(questions)
 
     st.markdown("<h1 style='text-align: center; color: #ff69b4;'>🎮 QUIZ INFORMATION 🎀</h1>", unsafe_allow_html=True)
-    st.info("Choose a category on Home or Categories, then return to this tab to play.")
-
     col1, col2, col3 = st.columns(3)
     with col1:
         st.metric("Total Categories", total_categories)
