@@ -26,33 +26,33 @@ st.markdown("""
     }
     
     .stButton>button {
-        background: #67646f !important;
-        border: 2px solid #6f6a78 !important;
+        background: linear-gradient(135deg, #ffffff 0%, #fff0f5 100%) !important;
+        border: 2px solid #ffb6d9 !important;
         color: #ff69b4 !important;
         font-weight: 600;
         border-radius: 20px !important;
         padding: 20px !important;
         font-size: 1.1rem !important;
         transition: all 0.2s ease;
-        box-shadow: none !important;
+        box-shadow: 0 4px 12px rgba(255, 105, 180, 0.15);
     }
     
-    /* Hover stays neutral so only the chosen button can look selected. */
+    /* Hover stays close to default to avoid fake "second selected" look. */
     .stButton>button:hover {
-        background: #67646f !important;
-        border-color: #7a7485 !important;
+        background: linear-gradient(135deg, #ffffff 0%, #fff0f5 100%) !important;
+        border-color: #ffb6d9 !important;
         transform: none;
-        box-shadow: none !important;
+        box-shadow: 0 4px 12px rgba(255, 105, 180, 0.15) !important;
     }
 
-    /* Clicked/focused option gets the selected highlight. */
+    /* Clicked/focused option gets the selected highlight only. */
     .stButton>button:focus,
     .stButton>button:focus-visible,
     .stButton>button:active {
-        background: linear-gradient(135deg, #ffffff 0%, #fff0f5 100%) !important;
-        border-color: #ffb6d9 !important;
+        background: linear-gradient(135deg, #ffe6f3 0%, #ffd1ea 100%) !important;
+        border-color: #ff69b4 !important;
         color: #ff69b4 !important;
-        box-shadow: 0 4px 12px rgba(255, 105, 180, 0.2) !important;
+        box-shadow: 0 0 0 2px rgba(255, 105, 180, 0.35), 0 8px 20px rgba(255, 105, 180, 0.25) !important;
         outline: none !important;
     }
     
