@@ -210,7 +210,7 @@ if current_q_index < len(category_questions):
     cols = st.columns(2)
     for idx, option in enumerate(question_data['options']):
         with cols[idx % 2]:
-            if st.button(option, key=f"answer_{idx}", use_container_width=True):
+            if st.button(option, key=f"answer_{current_q_index}_{idx}", use_container_width=True):
                 # start processing; stop timer-based reruns
                 st.session_state.answer_in_progress = True
                 selected_answer = option
