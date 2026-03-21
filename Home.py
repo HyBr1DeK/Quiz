@@ -207,7 +207,7 @@ with col1:
         
         col_cat1, col_cat2 = st.columns([3.5, 0.7])
         with col_cat1:
-            if st.button(f"{emoji} {category}", key=f"cat_{idx}", use_container_width=True, help=f"Test your knowledge with 20 {category} questions!"):
+            if st.button(f"{emoji} {category}", key=f"cat_{idx}", use_container_width=True, help=f"Test your knowledge with {len(questions[category])} {category} questions!"):
                 st.session_state.selected_category = category
                 st.session_state.game_active = True
                 st.session_state.current_question = 0
