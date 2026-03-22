@@ -176,9 +176,16 @@ category_questions = questions[st.session_state.selected_category]
 current_q_index = st.session_state.current_question
 
 # Progress bar
-progress = (current_q_index + 1) / len(category_questions)
+total_questions = len(category_questions)
+if total_questions == 0:
+    st.error("🚫 This category has no questions configured.")
+    st.stop()
+
+# Streamlit progress accepts only values in [0.0, 1.0].
+display_q_index = min(current_q_index, total_questions)
+progress = display_q_index / total_questions
 st.progress(progress)
-st.caption(f"Question {current_q_index + 1} of {len(category_questions)}")
+st.caption(f"Question {display_q_index} of {total_questions}")
 
 # create placeholders so that any previous feedback/explanation is
 # explicitly cleared each time we render a new question.  using
@@ -192,7 +199,7 @@ explanation_ph = st.empty()
 if 'answer_in_progress' not in st.session_state:
     st.session_state.answer_in_progress = False
 
-if current_q_index < len(category_questions):
+if current_q_index < total_questions:
     question_data = category_questions[current_q_index]
     
     # Calculate remaining time
@@ -245,7 +252,7 @@ if current_q_index < len(category_questions):
         st.session_state.current_question += 1
         st.session_state.timer_start = time.time()
         
-        if st.session_state.current_question >= len(category_questions):
+        if st.session_state.current_question >= total_questions:
             st.session_state.game_active = False
             st.session_state.quiz_completed = True
         
@@ -303,7 +310,7 @@ if current_q_index < len(category_questions):
         st.session_state.current_question += 1
         st.session_state.timer_start = time.time()
 
-        if st.session_state.current_question >= len(category_questions):
+        if st.session_state.current_question >= total_questions:
             st.session_state.game_active = False
             st.session_state.quiz_completed = True
 
@@ -312,10 +319,10 @@ if current_q_index < len(category_questions):
 else:
     # Quiz finished
     st.success("🎉 Quiz Completed!")
-    st.write(f"Final Score: **{st.session_state.score}/{len(category_questions) * 10}**")
+    st.write(f"Final Score: **{st.session_state.score}/{total_questions * 10}**")
     
     # Calculate percentage
-    percentage = (st.session_state.score / (len(category_questions) * 10)) * 100
+    percentage = (st.session_state.score / (total_questions * 10)) * 100
     st.metric("Accuracy", f"{percentage:.1f}%")
     
     # Save to highscores once.
@@ -325,7 +332,7 @@ else:
             'name': st.session_state.player_name,
             'category': st.session_state.selected_category,
             'score': st.session_state.score,
-            'total': len(category_questions) * 10,
+            'total': total_questions * 10,
             'percentage': round(percentage, 1),
             'date': datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         }
@@ -364,7 +371,7 @@ else:
 # rerun occurs.  We also skip the refresh if an answer is currently being
 # processed; otherwise a background rerun might collide with the 2‑second
 # feedback pause and leave stale messages around.
-if current_q_index < len(category_questions):
+if current_q_index < total_questions:
     # only rerun when there is still time remaining and we're not waiting
     # on feedback from a just‑clicked option.
     if remaining_time > 0 and not st.session_state.answer_in_progress:
