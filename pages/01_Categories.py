@@ -95,6 +95,8 @@ for idx, (category, q_list) in enumerate(questions.items()):
         if st.button(f"Play {category}", key=f"play_{category}", use_container_width=True):
             st.session_state.selected_category = category
             st.session_state.game_active = True
+            st.session_state.quiz_completed = False
+            st.session_state.score_saved = False
             st.session_state.current_question = 0
             st.session_state.answers = []
             st.session_state.score = 0

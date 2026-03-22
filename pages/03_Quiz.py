@@ -112,8 +112,14 @@ def save_highscores(scores):
     with open('data/highscores.json', 'w') as f:
         json.dump(scores, f, indent=2)
 
+# Track completion/save state to avoid missing or duplicate leaderboard entries.
+if 'quiz_completed' not in st.session_state:
+    st.session_state.quiz_completed = False
+if 'score_saved' not in st.session_state:
+    st.session_state.score_saved = False
+
 # Check if game is active
-if (not st.session_state.get('game_active', False)) or (st.session_state.get('selected_category') is None):
+if ((not st.session_state.get('game_active', False)) or (st.session_state.get('selected_category') is None)) and (not st.session_state.get('quiz_completed', False)):
     questions = load_questions()
     total_questions = sum(len(q) for q in questions.values())
     total_categories = len(questions)
@@ -241,6 +247,7 @@ if current_q_index < len(category_questions):
         
         if st.session_state.current_question >= len(category_questions):
             st.session_state.game_active = False
+            st.session_state.quiz_completed = True
         
         st.rerun()
     
@@ -298,6 +305,7 @@ if current_q_index < len(category_questions):
 
         if st.session_state.current_question >= len(category_questions):
             st.session_state.game_active = False
+            st.session_state.quiz_completed = True
 
         st.rerun()
 
@@ -310,20 +318,23 @@ else:
     percentage = (st.session_state.score / (len(category_questions) * 10)) * 100
     st.metric("Accuracy", f"{percentage:.1f}%")
     
-    # Save to highscores
-    highscores = load_highscores()
-    new_score = {
-        'name': st.session_state.player_name,
-        'category': st.session_state.selected_category,
-        'score': st.session_state.score,
-        'total': len(category_questions) * 10,
-        'percentage': round(percentage, 1),
-        'date': datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    }
-    highscores.append(new_score)
-    save_highscores(highscores)
-    
-    st.info("✅ Score saved to Highscores!")
+    # Save to highscores once.
+    if not st.session_state.score_saved:
+        highscores = load_highscores()
+        new_score = {
+            'name': st.session_state.player_name,
+            'category': st.session_state.selected_category,
+            'score': st.session_state.score,
+            'total': len(category_questions) * 10,
+            'percentage': round(percentage, 1),
+            'date': datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        }
+        highscores.append(new_score)
+        save_highscores(highscores)
+        st.session_state.score_saved = True
+        st.info("✅ Score saved to Highscores!")
+    else:
+        st.info("✅ This score is already saved in Highscores.")
     
     # Show answer review
     st.write("---")
@@ -339,6 +350,8 @@ else:
     # Reset game for new round
     if st.button("Play Again", use_container_width=True):
         st.session_state.game_active = False
+        st.session_state.quiz_completed = False
+        st.session_state.score_saved = False
         st.session_state.selected_category = None
         st.session_state.current_question = 0
         st.session_state.score = 0
