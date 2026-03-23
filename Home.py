@@ -126,6 +126,48 @@ st.markdown("""
         padding: 20px;
         box-shadow: 0 4px 12px rgba(255, 105, 180, 0.15);
     }
+    
+    /* Sidebar navigation styling - keep pink on all states */
+    .stSidebar [data-testid="stSidebarNav"] a {
+        color: #ff69b4 !important;
+    }
+    
+    .stSidebar [data-testid="stSidebarNav"] a:hover {
+        color: #ff69b4 !important;
+    }
+    
+    .stSidebar [data-testid="stSidebarNav"] a:active {
+        color: #ff69b4 !important;
+    }
+    
+    .stSidebar [data-testid="stSidebarNav"] a:visited {
+        color: #ff69b4 !important;
+    }
+    
+    .stSidebar [data-testid="stSidebarNav"] a:focus {
+        color: #ff69b4 !important;
+    }
+    
+    /* Sidebar link active state */
+    .stSidebar [data-testid="stSidebarNav"] [aria-selected="true"] {
+        color: #ff69b4 !important;
+    }
+    
+    .stSidebar [data-testid="stSidebarNav"] [aria-selected="true"] * {
+        color: #ff69b4 !important;
+    }
+    
+    /* General sidebar links */
+    .stSidebar a {
+        color: #ff69b4 !important;
+    }
+    
+    .stSidebar a:hover,
+    .stSidebar a:active,
+    .stSidebar a:visited,
+    .stSidebar a:focus {
+        color: #ff69b4 !important;
+    }
     </style>
     """, unsafe_allow_html=True)
 

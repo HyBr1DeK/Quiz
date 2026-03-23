@@ -51,6 +51,46 @@ st.markdown("""
         color: #ffc8e7;
         opacity: 0.95;
     }
+    
+    /* Sidebar navigation styling - keep pink on all states */
+    .stSidebar [data-testid="stSidebarNav"] a {
+        color: #ff69b4 !important;
+    }
+    
+    .stSidebar [data-testid="stSidebarNav"] a:hover {
+        color: #ff69b4 !important;
+    }
+    
+    .stSidebar [data-testid="stSidebarNav"] a:active {
+        color: #ff69b4 !important;
+    }
+    
+    .stSidebar [data-testid="stSidebarNav"] a:visited {
+        color: #ff69b4 !important;
+    }
+    
+    .stSidebar [data-testid="stSidebarNav"] a:focus {
+        color: #ff69b4 !important;
+    }
+    
+    .stSidebar [data-testid="stSidebarNav"] [aria-selected="true"] {
+        color: #ff69b4 !important;
+    }
+    
+    .stSidebar [data-testid="stSidebarNav"] [aria-selected="true"] * {
+        color: #ff69b4 !important;
+    }
+    
+    .stSidebar a {
+        color: #ff69b4 !important;
+    }
+    
+    .stSidebar a:hover,
+    .stSidebar a:active,
+    .stSidebar a:visited,
+    .stSidebar a:focus {
+        color: #ff69b4 !important;
+    }
     </style>
 """, unsafe_allow_html=True)
 

@@ -58,6 +58,46 @@ st.markdown("""
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
         box-shadow: 0 8px 22px rgba(255, 105, 180, 0.2);
     }
+    
+    /* Sidebar navigation styling - keep pink on all states */
+    .stSidebar [data-testid="stSidebarNav"] a {
+        color: #ff69b4 !important;
+    }
+    
+    .stSidebar [data-testid="stSidebarNav"] a:hover {
+        color: #ff69b4 !important;
+    }
+    
+    .stSidebar [data-testid="stSidebarNav"] a:active {
+        color: #ff69b4 !important;
+    }
+    
+    .stSidebar [data-testid="stSidebarNav"] a:visited {
+        color: #ff69b4 !important;
+    }
+    
+    .stSidebar [data-testid="stSidebarNav"] a:focus {
+        color: #ff69b4 !important;
+    }
+    
+    .stSidebar [data-testid="stSidebarNav"] [aria-selected="true"] {
+        color: #ff69b4 !important;
+    }
+    
+    .stSidebar [data-testid="stSidebarNav"] [aria-selected="true"] * {
+        color: #ff69b4 !important;
+    }
+    
+    .stSidebar a {
+        color: #ff69b4 !important;
+    }
+    
+    .stSidebar a:hover,
+    .stSidebar a:active,
+    .stSidebar a:visited,
+    .stSidebar a:focus {
+        color: #ff69b4 !important;
+    }
     </style>
 """, unsafe_allow_html=True)
 
