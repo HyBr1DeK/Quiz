@@ -120,6 +120,7 @@ st.markdown("""
     
     .stSidebar [data-testid="stSidebarNav"] [aria-selected="true"] {
         color: #ff69b4 !important;
+        background: rgba(255, 105, 180, 0.15) !important;
     }
     
     .stSidebar [data-testid="stSidebarNav"] [aria-selected="true"] * {
@@ -134,6 +135,15 @@ st.markdown("""
     .stSidebar a:active,
     .stSidebar a:visited,
     .stSidebar a:focus {
+        color: #ff69b4 !important;
+    }
+    
+    .stSidebar [role="button"][aria-selected="true"] {
+        background: rgba(255, 105, 180, 0.2) !important;
+        color: #ff69b4 !important;
+    }
+    
+    .stSidebar [role="button"][aria-selected="true"] * {
         color: #ff69b4 !important;
     }
     </style>
