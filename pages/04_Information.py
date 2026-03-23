@@ -7,7 +7,7 @@ st.markdown("""
     <style>
     .main {
         background: radial-gradient(circle at 20% 10%, #141b33 0%, #090d1f 40%, #050815 100%);
-        color: #ffd6ec;
+        color: #ff69b4;
     }
 
     h1 {
@@ -23,7 +23,7 @@ st.markdown("""
         border-radius: 22px;
         padding: 26px;
         box-shadow: 0 8px 24px rgba(255, 105, 180, 0.18);
-        color: #ffd6ec;
+        color: #ff69b4;
         font-size: 1.1rem;
         line-height: 1.7;
         margin-top: 0.5rem;
@@ -57,6 +57,11 @@ st.markdown("""
         padding: 12px;
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
         box-shadow: 0 8px 22px rgba(255, 105, 180, 0.2);
+        color: #ff69b4;
+    }
+    
+    .hello-wrap * {
+        color: #ff69b4 !important;
     }
     
     /* Sidebar navigation styling - keep pink on all states */

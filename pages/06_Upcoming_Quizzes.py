@@ -7,7 +7,7 @@ st.markdown("""
     <style>
     .main {
         background: radial-gradient(circle at 20% 10%, #141b33 0%, #090d1f 40%, #050815 100%);
-        color: #ffd6ec;
+        color: #ff69b4;
     }
 
     h1 {
@@ -24,7 +24,7 @@ st.markdown("""
         border-radius: 22px;
         padding: 24px;
         box-shadow: 0 8px 24px rgba(255, 105, 180, 0.18);
-        color: #ffd6ec;
+        color: #ff69b4;
         margin-top: 0.75rem;
     }
 
@@ -43,7 +43,7 @@ st.markdown("""
     }
 
     .subtext {
-        color: #ff6db6;
+        color: #ff69b4;
         font-weight: 700;
         font-size: 1.05rem;
     }
@@ -54,7 +54,7 @@ st.markdown("""
     }
 
     .tip {
-        color: #ffd6ec;
+        color: #ff69b4;
         font-size: 0.98rem;
         margin-top: 10px;
     }

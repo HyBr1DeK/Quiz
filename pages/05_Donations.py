@@ -7,7 +7,7 @@ st.markdown("""
     <style>
     .main {
         background: radial-gradient(circle at 20% 10%, #141b33 0%, #090d1f 40%, #050815 100%);
-        color: #ffd6ec;
+        color: #ff69b4;
     }
 
     h1 {
@@ -24,7 +24,7 @@ st.markdown("""
         border-radius: 22px;
         padding: 26px;
         box-shadow: 0 8px 24px rgba(255, 105, 180, 0.18);
-        color: #ffd6ec;
+        color: #ff69b4;
         font-size: 1.08rem;
         line-height: 1.75;
         margin-top: 0.75rem;
@@ -48,8 +48,8 @@ st.markdown("""
     }
 
     .subtle {
-        color: #ffc8e7;
-        opacity: 0.95;
+        color: #ff69b4;
+        opacity: 1;
     }
     
     /* Sidebar navigation styling - keep pink on all states */
